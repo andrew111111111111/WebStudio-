@@ -1,6 +1,11 @@
-p {
-  color: #757575;
-}
-h3 {
-  color: #212121;
+:root {
+  --color-text-logo: #000000;
+  --color-text-hover: #2196f3;
+  --color-text-secendary: #ffffff;
+  --color-text-primary: #757575;
+  --color-text-title: #212121;
+  --color-text-info: #ffffff99;
+  --color-bg-product: #eeeeee;
+  --color-bg-primari: #2f303a;
+  --color-text-secendary: #ffffff99;
 }
