@@ -7,5 +7,20 @@
   --color-text-info: #ffffff99;
   --color-bg-product: #eeeeee;
   --color-bg-primari: #2f303a;
-  --color-text-secendary: #ffffff99;
+  --color-bg-secendary: #ffffff99;
+}
+p {
+  --color-text-primary: ;
+}
+.black {
+  --color-text-title: ;
+}
+h1 {
+  --color-text-secendary: ;
+}
+.blue {
+  --color-text-hover: ;
+}
+.white_grei {
+  --color-text-primary: ;
 }
