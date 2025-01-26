@@ -24,3 +24,103 @@ h1 {
 .white_grei {
   --color-text-primary: ;
 }
+h3 {
+  --color-text-primary: ;
+}
+.grei {
+  --color-bg-primari: ;
+}
+
+body {
+  font-family: Roboto;
+}
+
+.logo {
+  font-family: Raleway;
+}
+h1 {
+  font-family: Roboto;
+  font-size: 44px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #2f303a;
+}
+header a:only-child:hover {
+  color: #2196f3;
+}
+a {
+  color: #212121;
+  font-size: 14px;
+  font-weight: 500;
+}
+.logo {
+  color: #2196f3;
+}
+.span-logo1 {
+  color: #000000;
+}
+.title-secendary {
+  color: #212121;
+  font-size: 14px;
+  font-weight: 700;
+}
+.p-primary {
+  color: #757575;
+  font-size: 14px;
+  font-weight: 400;
+}
+h2 {
+  color: #212121;
+  font-size: 36px;
+  font-weight: 700;
+}
+h3 {
+  color: #212121;
+  font-size: 16px;
+  font-weight: 500;
+}
+.people {
+  color: #757575;
+  font-size: 14px;
+  font-weight: 400;
+}
+.span-logo2 {
+  color: #ffffff;
+}
+footer {
+  background-color: #2f303a;
+}
+.white {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+}
+footer ul li a {
+  color: #ffffff99;
+}
+.Product-about {
+  color: #757575;
+  font-size: 16px;
+  font-weight: 400;
+}
+.Product-name {
+  color: #212121;
+  font-size: 18px;
+  font-weight: 700;
+}
+p {
+  text-shadow: 5px 2px 6px #6aed7b;
+}
+a {
+  text-shadow: 5px 2px 6px #e31c90;
+}
+h1 {
+  text-shadow: 5px 2px 6px #060207;
+}
+h2,
+h3 {
+  text-shadow: 5px 2px 6px #eabf52;
+}
+button {
+  text-shadow: 5px 2px 6px #f37a54;
+}
