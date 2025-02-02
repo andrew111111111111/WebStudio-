@@ -6,111 +6,111 @@
   --color-text-title: #212121;
   --color-text-info: #ffffff99;
   --color-bg-product: #eeeeee;
-  --color-bg-primari: #2f303a;
+  --color-bg-primary: #2f303a;
   --color-bg-secendary: #ffffff99;
+  --font-primary: family=Roboto;
+  --font-secendary: family=Raleway;
 }
-p {
-  --color-text-primary: ;
-}
-.black {
-  --color-text-title: ;
-}
-h1 {
-  --color-text-secendary: ;
-}
-.blue {
-  --color-text-hover: ;
-}
-.white_grei {
-  --color-text-primary: ;
-}
-h3 {
-  --color-text-primary: ;
-}
-.grei {
-  --color-bg-primari: ;
-}
-
 body {
-  font-family: Roboto;
-}
-
-.logo {
-  font-family: Raleway;
-}
-h1 {
-  font-size: 44px;
-  font-weight: 700;
-  color: white;
-  background-color: var(--color-bg-primari);
-}
-header a:only-child:hover {
-  color: var(--color-text-hover);
-}
-a {
-  color: var(--color-text-title);
+  font-family: var(--font-primary);
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 400;
+  color: var(--color-text-primary);
+  background-color: var(--color-bg-product);
 }
-.logo {
+.blue-logo {
+  font-family: var(--font-secendary);
+  font-size: 26px;
+  font-weight: 700;
   color: var(--color-text-hover);
 }
-.span-logo1 {
+.black-logo {
+  font-family: var(--font-secendary);
+  font-size: 26px;
+  font-weight: 700;
   color: var(--color-text-logo);
 }
-.title-secendary {
-  color: var(--color-text-title);
-  font-size: 14px;
-  font-weight: 700;
-}
-.p-primary {
-  color: var(--color-text-primary);
-  color: #757575;
-  font-size: 14px;
-  font-weight: 400;
-}
-h2 {
-  color: var(--color-text-title);
-  font-size: 36px;
-  font-weight: 700;
-}
-h3 {
-  color: var(--color-text-title);
-  font-size: 16px;
+.nav-link {
   font-weight: 500;
-}
-.people {
-  color: var(--color-text-primary);
-  color: #757575;
-  font-size: 14px;
-  font-weight: 400;
-}
-.span-logo2 {
-  color: var(--color-text-secendary);
-}
-footer {
-  background-color: var(--color-bg-primari);
-}
-.white {
-  color: var(--color-text-secendary);
-  font-size: 14px;
-  font-weight: 400;
-}
-.footer-nav {
-  color: var(--color-text-info);
-}
-.Product-about {
-  color: var(--color-text-primary);
-  color: #757575;
-  font-size: 16px;
-  font-weight: 400;
-}
-.Product-name {
   color: var(--color-text-title);
-  color: #212121;
-  font-size: 18px;
-  font-weight: 700;
 }
+.nav-link:hover {
+  color: var(--color-text-hover);
+}
+.address {
+  color: var(--color-text-primary);
+}
+.address:hover {
+  color: var(--color-text-hover);
+}
+.hero {
+  color: var(--color-text-secendary);
+  background-color: var(--color-bg-primary);
+}
+.hero-button {
+  width: 216px;
+  height: 50px;
+  top: 430px;
+  left: 692px;
+  border-radius: 4px;
+  font-family: var(--font-primary);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 0.53;
+}
+.hero-button:hover {
+  background-color: var(--color-text-hover);
+}
+.title-advantages {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--color-text-title);
+}
+.title-work {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--color-text-title);
+}
+.title-command {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--color-text-title);
+}
+.name {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--color-text-title);
+}
+.teammete {
+  font-size: 16px;
+}
+.footer {
+  background-color: var(--color-bg-primary);
+}
+.white-logo {
+  font-family: var(--font-secendary);
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--color-text-secendary);
+}
+.filter-button {
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--color-text-secendary);
+  background-color: var(--color-bg-product);
+}
+.filter-button:hover {
+  background-color: var(--color-text-hover);
+}
+.product-name {
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--color-text-logo);
+}
+.product-about {
+  font-size: 16px;
+}
+
 p {
   text-shadow: 5px 2px 6px #6aed7b;
 }
