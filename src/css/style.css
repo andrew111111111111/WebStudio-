@@ -39,71 +39,74 @@ body {
   font-family: Raleway;
 }
 h1 {
-  font-family: Roboto;
   font-size: 44px;
   font-weight: 700;
-  color: #ffffff;
-  background-color: #2f303a;
+  color: white;
+  background-color: var(--color-bg-primari);
 }
 header a:only-child:hover {
-  color: #2196f3;
+  color: var(--color-text-hover);
 }
 a {
-  color: #212121;
+  color: var(--color-text-title);
   font-size: 14px;
   font-weight: 500;
 }
 .logo {
-  color: #2196f3;
+  color: var(--color-text-hover);
 }
 .span-logo1 {
-  color: #000000;
+  color: var(--color-text-logo);
 }
 .title-secendary {
-  color: #212121;
+  color: var(--color-text-title);
   font-size: 14px;
   font-weight: 700;
 }
 .p-primary {
+  color: var(--color-text-primary);
   color: #757575;
   font-size: 14px;
   font-weight: 400;
 }
 h2 {
-  color: #212121;
+  color: var(--color-text-title);
   font-size: 36px;
   font-weight: 700;
 }
 h3 {
-  color: #212121;
+  color: var(--color-text-title);
   font-size: 16px;
   font-weight: 500;
 }
 .people {
+  color: var(--color-text-primary);
   color: #757575;
   font-size: 14px;
   font-weight: 400;
 }
 .span-logo2 {
-  color: #ffffff;
+  color: var(--color-text-secendary);
 }
 footer {
-  background-color: #2f303a;
+  background-color: var(--color-bg-primari);
 }
 .white {
-  color: #ffffff;
+  color: var(--color-text-secendary);
   font-size: 14px;
   font-weight: 400;
 }
-footer ul li a {
-  color: #ffffff99;
+.footer-nav {
+  color: var(--color-text-info);
 }
 .Product-about {
+  color: var(--color-text-primary);
   color: #757575;
   font-size: 16px;
   font-weight: 400;
 }
 .Product-name {
+  color: var(--color-text-title);
   color: #212121;
   font-size: 18px;
   font-weight: 700;
