@@ -18,7 +18,7 @@ body {
   color: var(--color-text-primary);
   background-color: var(--color-bg-product);
 }
-.blue-logo {
+.logo {
   font-family: var(--font-secendary);
   font-size: 26px;
   font-weight: 700;
@@ -37,10 +37,10 @@ body {
 .nav-link:hover {
   color: var(--color-text-hover);
 }
-.address {
+.header-contacts-link {
   color: var(--color-text-primary);
 }
-.address:hover {
+.header-contacts-link:hover {
   color: var(--color-text-hover);
 }
 .hero {
@@ -61,27 +61,27 @@ body {
 .hero-button:hover {
   background-color: var(--color-text-hover);
 }
-.title-advantages {
+.advantages-title {
   font-size: 14px;
   font-weight: 700;
   color: var(--color-text-title);
 }
-.title-work {
+.work-title {
   font-size: 14px;
   font-weight: 700;
   color: var(--color-text-title);
 }
-.title-command {
+.command-title {
   font-size: 14px;
   font-weight: 700;
   color: var(--color-text-title);
 }
-.name {
+.teammate-name {
   font-size: 14px;
   font-weight: 700;
   color: var(--color-text-title);
 }
-.teammete {
+.teammete-role {
   font-size: 16px;
 }
 .footer {
@@ -92,6 +92,12 @@ body {
   font-size: 26px;
   font-weight: 700;
   color: var(--color-text-secendary);
+}
+.footer-contacts-link {
+  color: var(--color-text-info);
+}
+.footer-contacts-link:hover {
+  color: var(--color-text-hover);
 }
 .filter-button {
   font-weight: 500;
@@ -107,7 +113,7 @@ body {
   font-size: 18px;
   color: var(--color-text-logo);
 }
-.product-about {
+.product-filters {
   font-size: 16px;
 }
 
