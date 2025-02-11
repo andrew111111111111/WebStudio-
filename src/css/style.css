@@ -91,6 +91,7 @@ body {
   font-size: 24px;
   letter-spacing: 0.03em;
   text-align: center;
+  color: var(--color-text-logo);
 }
 .team-title {
   font-size: 24px;
