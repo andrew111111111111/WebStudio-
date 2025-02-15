@@ -73,7 +73,7 @@ body {
   font-weight: 700;
   color: var(--color-text-secendary);
   background-color: var(--color-text-hover);
-  padding: 50px 216px;
+  padding: 10px 30px;
   border-radius: 4px;
 }
 
