@@ -75,7 +75,6 @@ body {
   background-color: var(--color-text-hover);
   padding: 10px 30px;
   border-radius: 4px;
-  align-items: center;
 }
 
 .advantages-title {
