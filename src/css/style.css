@@ -26,7 +26,6 @@ body {
   font-weight: 700;
   color: var(--color-text-hover);
   line-height: 1.38;
-  text-decoration-line: none;
   letter-spacing: 0.03em;
 }
 .logo-black {
@@ -40,7 +39,6 @@ body {
 .nav-link {
   font-weight: 500;
   color: var(--color-text-title);
-  text-decoration-line: none;
   letter-spacing: 0.02em;
 }
 .nav-link:hover {
@@ -48,7 +46,6 @@ body {
 }
 .addres-link {
   color: var(--color-text-primary);
-  text-decoration-line: none;
 }
 .addres-link:hover {
   color: var(--color-text-hover);
@@ -128,13 +125,11 @@ body {
 .footer-contacts-address {
   color: var(--color-text-secendary);
   line-height: 1.71;
-  text-decoration-line: none;
   letter-spacing: 0.03em;
 }
 .footer-contacts-link {
   color: var(--color-text-info);
   line-height: 1.71;
-  text-decoration-line: none;
   letter-spacing: 0.03em;
 }
 .footer-contacts-link:hover {

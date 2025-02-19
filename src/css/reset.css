@@ -7,11 +7,17 @@ h6,
 p,
 ul,
 ol,
-button {
+button,
+address {
   margin: 0;
   padding: 0;
+  text-decoration-line: none;
+  text-decoration: none;
+  color: inherit;
+  cursor: context-menu;
 }
 a {
+  text-decoration-line: none;
   text-decoration: none;
   color: inherit;
 }
