@@ -11,6 +11,9 @@ button,
 address {
   margin: 0;
   padding: 0;
+}
+a,
+button {
   text-decoration-line: none;
   text-decoration: none;
   color: inherit;
