@@ -83,8 +83,11 @@ body {
 }
 .hero {
   background-color: var(--color-bg-primary);
+}
+.hero-content {
   display: flex;
-  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .hero-title {
   font-size: 44px;
@@ -92,9 +95,8 @@ body {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  text-align: center;
   padding-top: 200px;
-  max-width: 696px;
+  width: 696px;
 }
 .hero-button {
   top: 430px;
@@ -109,7 +111,6 @@ body {
   border-radius: 4px;
   margin-bottom: 200px;
   margin-top: 30px;
-
   margin-left: auto;
   margin-right: auto;
 }
