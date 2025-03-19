@@ -41,6 +41,7 @@ body {
   letter-spacing: 0.03em;
   padding-top: 25px;
   padding-bottom: 25px;
+  margin-right: 95px;
 }
 .logo-black {
   font-family: var(--font-secendary);
@@ -54,6 +55,7 @@ body {
   display: flex;
   gap: 50px;
   padding-top: 30px;
+  margin-right: 344px;
 }
 .nav-link {
   font-weight: 500;
