@@ -119,6 +119,7 @@ img {
   margin-top: 30px;
   margin-left: auto;
   margin-right: auto;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
 .advantages-list {
   padding-top: 95px;
@@ -199,6 +200,8 @@ img {
   display: flex;
   align-items: center;
   flex-direction: column;
+  box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+    0 1px 3px 0 rgba(0, 0, 0, 0.12);
 }
 .teammate-img {
   padding-bottom: 30px;
@@ -270,6 +273,8 @@ img {
 .filters-button:hover {
   background-color: var(--color-text-hover);
   color: var(--color-text-secendary);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08),
+    0 3px 1px 0 rgba(0, 0, 0, 0.1);
 }
 .portfolio-list {
   padding-bottom: 95px;
@@ -280,6 +285,10 @@ img {
 }
 .product {
   padding-bottom: 30px;
+}
+.product:hover {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08),
+    0 3px 1px 0 rgba(0, 0, 0, 0.1);
 }
 .product-name {
   font-weight: 700;
