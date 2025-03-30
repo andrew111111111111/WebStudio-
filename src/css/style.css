@@ -19,6 +19,11 @@ body {
   color: var(--color-text-primary);
   line-height: 1.14;
 }
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
 .container {
   max-width: 1200px;
   padding-left: 15px;
@@ -41,7 +46,6 @@ body {
   letter-spacing: 0.03em;
   padding-top: 25px;
   padding-bottom: 25px;
-  margin-right: 95px;
 }
 .logo-black {
   font-family: var(--font-secendary);
@@ -55,7 +59,7 @@ body {
   display: flex;
   gap: 50px;
   padding-top: 30px;
-  margin-right: 344px;
+  flex-grow: 3;
 }
 .nav-link {
   font-weight: 500;
