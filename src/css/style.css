@@ -89,6 +89,10 @@ img {
 }
 .hero {
   background-color: var(--color-bg-primary);
+  contain: "";
+  background-image: url(../img/hero_photo.webp);
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .hero-content {
   display: flex;
