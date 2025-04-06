@@ -31,10 +31,13 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
+.header {
+  padding: 25px 0px;
+}
 .header-contect {
   display: flex;
   gap: 95px;
-  justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
@@ -44,8 +47,6 @@ img {
   color: var(--color-text-hover);
   line-height: 1.38;
   letter-spacing: 0.03em;
-  padding-top: 25px;
-  padding-bottom: 25px;
 }
 .logo-black {
   font-family: var(--font-secendary);
@@ -55,11 +56,12 @@ img {
   line-height: 1.38;
   letter-spacing: 0.03em;
 }
+.nav {
+  flex-grow: 1;
+}
 .nav-list {
   display: flex;
   gap: 50px;
-  padding-top: 30px;
-  flex-grow: 3;
 }
 .nav-link {
   font-weight: 500;
@@ -72,27 +74,21 @@ img {
 .header-list {
   display: flex;
   gap: 50px;
-  padding-top: 30px;
 }
 .addres-link {
   color: var(--color-text-primary);
-  padding-top: 30px;
-  padding-bottom: 25px;
-  padding-top: 30px;
 }
 .addres-link:hover {
   color: var(--color-text-hover);
 }
-.nav-link {
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
 .hero {
   background-color: var(--color-bg-primary);
   contain: "";
-  background-image: url(../img/hero_photo.webp);
+  background-image: url(../img/hero.webp),
+    linear-gradient(to top, #c4c4c4 #c4c4c4);
   background-position: center;
   background-repeat: no-repeat;
+  padding: 200px 0;
 }
 .hero-content {
   display: flex;
@@ -105,12 +101,10 @@ img {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  padding-top: 200px;
   width: 696px;
+  text-align: center;
 }
 .hero-button {
-  top: 430px;
-  left: 692px;
   border-radius: 4px;
   font-family: var(--font-primary);
   font-size: 16px;
@@ -119,10 +113,6 @@ img {
   background-color: var(--color-text-hover);
   padding: 10px 30px;
   border-radius: 4px;
-  margin-bottom: 200px;
-  margin-top: 30px;
-  margin-left: auto;
-  margin-right: auto;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
 .advantages-list {
