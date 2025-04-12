@@ -81,13 +81,18 @@ img {
 .addres-link:hover {
   color: var(--color-text-hover);
 }
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .hero {
   background-color: var(--color-bg-primary);
   contain: "";
-  background-image: url(../img/hero.webp),
-    linear-gradient(to top, #c4c4c4 #c4c4c4);
+  background-image: url(../img/hero.webp);
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
   padding: 200px 0;
 }
 .hero-content {
