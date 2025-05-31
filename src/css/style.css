@@ -9,6 +9,7 @@
   --color-bg-primary: #2f303a;
   --color-bg-secendary: #ffffff99;
   --color-bg-filters_button: #f5f4fa;
+  --color-bg-gradient: #2f303a66;
   --font-primary: "Roboto";
   --font-secendary: "Raleway";
 }
@@ -87,10 +88,15 @@ img {
 }
 .hero {
   background-color: var(--color-bg-primary);
-  background-image: url(../img/hero.webp);
+  background-image: linear-gradient(
+      to top,
+      var(--color-bg-gradient),
+      var(--color-bg-gradient)
+    ),
+    url(../img/hero.webp);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   padding: 200px 0;
 }
 .hero-content {
