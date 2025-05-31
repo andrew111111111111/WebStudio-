@@ -78,10 +78,14 @@ img {
 }
 .addres-link {
   color: var(--color-text-primary);
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 .addres-link:hover {
   color: var(--color-text-hover);
 }
+
 .main {
   display: flex;
   flex-direction: column;
@@ -285,6 +289,9 @@ img {
   justify-content: center;
   flex-wrap: wrap;
   gap: 30px;
+}
+.portfolio-item {
+  flex-basis: calc((100% - 60px) / 3);
 }
 .product {
   padding-bottom: 30px;
