@@ -5,11 +5,13 @@
   --color-text-primary: #757575;
   --color-text-title: #212121;
   --color-text-info: #ffffff99;
+  --color-text-photo: #afb1b8;
   --color-bg-product: #eeeeee;
   --color-bg-primary: #2f303a;
   --color-bg-secendary: #ffffff99;
   --color-bg-filters_button: #f5f4fa;
   --color-bg-gradient: #2f303a66;
+  --color-bg-wheit10: #ffffff1a;
   --font-primary: "Roboto";
   --font-secendary: "Raleway";
 }
@@ -85,7 +87,14 @@ img {
 .addres-link:hover {
   color: var(--color-text-hover);
 }
-
+.addres-link:hover .addres-photo {
+  fill: var(--color-text-hover);
+}
+.addres-photo {
+  width: 16px;
+  height: 12px;
+  fill: var(--color-text-primary);
+}
 .main {
   display: flex;
   flex-direction: column;
@@ -199,11 +208,10 @@ img {
   padding-bottom: 50px;
 }
 .teammate {
-  padding-bottom: 90px;
+  border-radius: 4px;
+  padding-bottom: 30px;
   background-color: var(--color-text-secendary);
   margin-bottom: 95px;
-  height: 368px;
-  width: 270px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -227,9 +235,77 @@ img {
   letter-spacing: 0.03em;
   padding-bottom: 30px;
 }
+.teammate-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.teammate-link {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+}
+.teammate-link:hover {
+  background-color: var(--color-text-hover);
+  border-radius: 50%;
+}
+.teammate-picture {
+  width: 20px;
+  height: 20px;
+  fill: var(--color-text-photo);
+}
+.teammate-link:hover .teammate-picture {
+  fill: var(--color-text-secendary);
+}
+.clients {
+  padding: 102px 0 94px;
+}
+.clients-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.clients-title {
+  color: var(--color-text-title);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  padding-bottom: 50px;
+}
+.clients-list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.clients-link {
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--color-text-photo);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.clients-link:hover {
+  border: 1px solid var(--color-text-hover);
+}
+.clients-photo {
+  width: 106px;
+  height: 60px;
+  fill: var(--color-text-photo);
+}
+.clients-link:hover .clients-photo {
+  fill: var(--color-text-hover);
+}
 .footer {
   background-color: var(--color-bg-primary);
   padding-top: 60px;
+}
+.footer-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: start;
+  gap: 70px;
 }
 .logo-white {
   font-family: var(--font-secendary);
@@ -259,6 +335,30 @@ img {
 }
 .footer-contacts-item {
   padding-top: 10px;
+}
+.about-title {
+  color: var(--color-text-secendary);
+  padding: 12px 0px 20px;
+}
+.about-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.about-link {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  border-radius: 50%;
+  background-color: var(--color-bg-wheit10);
+}
+.about-link:hover {
+  background-color: var(--color-text-hover);
+}
+.about-photo {
+  width: 20px;
+  height: 20px;
+  fill: var(--color-text-secendary);
 }
 .filters-list {
   display: flex;
