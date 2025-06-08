@@ -11,6 +11,7 @@
   --color-bg-secendary: #ffffff99;
   --color-bg-filters_button: #f5f4fa;
   --color-bg-gradient: #2f303a66;
+  --color-bg-work: #2f303acc;
   --color-bg-wheit10: #ffffff1a;
   --font-primary: "Roboto";
   --font-secendary: "Raleway";
@@ -175,6 +176,10 @@ img {
   line-height: 1.71;
   padding-top: 10px;
 }
+.work {
+  padding-top: 50px;
+  margin-bottom: 95px;
+}
 .work-title {
   font-size: 24px;
   letter-spacing: 0.03em;
@@ -186,9 +191,20 @@ img {
   display: flex;
   gap: 30px;
 }
-.work-photo {
-  padding-top: 50px;
-  padding-bottom: 95px;
+.work-grup {
+  position: relative;
+}
+.work-subtitle {
+  font-weight: 700;
+  letter-spacing: 3%;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  padding: 27px 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: var(--color-bg-work);
 }
 .team {
   background-color: var(--color-bg-filters_button);
