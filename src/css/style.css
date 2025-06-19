@@ -13,6 +13,8 @@
   --color-bg-gradient: #2f303a66;
   --color-bg-work: #2f303acc;
   --color-bg-wheit10: #ffffff1a;
+  --color-border-modal: #0000001a;
+  --color-bg-modal: #00000033;
   --font-primary: "Roboto";
   --font-secendary: "Raleway";
 }
@@ -27,6 +29,9 @@ img {
   display: block;
   width: 100%;
   height: auto;
+}
+.no-scrole {
+  overflow: hidden;
 }
 .container {
   max-width: 1200px;
@@ -84,6 +89,7 @@ img {
   display: flex;
   align-items: center;
   gap: 10px;
+  background-color: inherit;
 }
 .addres-link:hover {
   color: var(--color-text-hover);
@@ -95,6 +101,121 @@ img {
   width: 16px;
   height: 12px;
   fill: var(--color-text-primary);
+}
+.backdrop {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.45);
+  inset: 0;
+}
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+.modal {
+  background-color: whitesmoke;
+  position: absolute;
+  width: 530px;
+  height: 580px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.button-clouse {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  border: solid 1px var(--color-border-modal);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.button-clouse:hover {
+  fill: var(--color-text-hover);
+}
+.photo-close {
+  width: 11px;
+  height: 11px;
+}
+.modal-title {
+  font-style: 20px;
+  color: var(--color-text-title);
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: 0.03;
+  padding: 40px 0 12px;
+}
+.modal-grup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.grup-text {
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01;
+  padding-bottom: 4px;
+}
+.grup-item:nth-child(5) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 55px 30px;
+  gap: 7px;
+}
+.grup-input {
+  border: var(--color-bg-modal) solid 1px;
+  border-radius: 4px;
+  width: 450px;
+  height: 40px;
+  padding: 12px 0;
+  display: flex;
+}
+.grup-input:hover {
+  border: var(--color-text-hover) solid 1px;
+}
+.koment-grup {
+  height: 120px;
+}
+.input-photo {
+  width: 18px;
+  height: 18px;
+  margin: 0 12px;
+}
+.grup-input:hover .input-photo {
+  fill: var(--color-text-hover);
+}
+.input {
+  width: 100%;
+  padding-right: 10px;
+  display: flex;
+  align-items: center;
+}
+.grup-text:nth-child(5) {
+  text-align: center;
+}
+.grup-link {
+  color: var(--color-text-hover);
+  text-decoration-line: underline;
+}
+.modal-acceptance {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 187%;
+  letter-spacing: 0.06em;
+  text-align: center;
+  color: var(--color-text-secendary);
+  background-color: var(--color-text-hover);
+  padding: 10px 52px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 .main {
   display: flex;
