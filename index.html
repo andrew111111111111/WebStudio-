@@ -30,7 +30,7 @@
         <nav class="nav">
           <ul class="nav-list">
             <li class="nav-item">
-              <a class="nav-link" href="./index.html">Студія</a>
+              <a class="nav-link studio-link" href="./index.html">Студія</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="portfolio.html">Портфоліо</a>
@@ -80,7 +80,7 @@
               <!-- name -->
               <ul class="grup-list">
                 <li class="grup-item">
-                  <p class="grup-text">Ім'я</p>
+                  <label for="grup-input0" class="grup-text">Ім'я</label>
                   <div class="grup-input">
                     <svg class="input-photo">
                       <use href="./src/img/symbol-defs.svg#icon-person" />
@@ -91,7 +91,7 @@
                 </li>
                 <!-- tel -->
                 <li class="grup-item">
-                  <p class="grup-text">Телефон</p>
+                  <label for="grup-input1" class="grup-text">Телефон</label>
                   <div class="grup-input">
                     <svg class="input-photo">
                       <use href="./src/img/symbol-defs.svg#icon-phone" />
@@ -102,7 +102,7 @@
                 </li>
                 <!-- e-mail -->
                 <li class="grup-item">
-                  <p class="grup-text">Пошта</p>
+                  <label for="grup-input2" class="grup-text">Пошта</label>
                   <div class="grup-input">
                     <svg class="input-photo">
                       <use href="./src/img/symbol-defs.svg#icon-email" />
@@ -113,11 +113,11 @@
                 </li>
                 <!-- koment -->
                 <li class="grup-item">
-                  <p class="grup-text">Коментар</p>
+                  <label for="grup-input3" class="grup-text">Коментар</label>
                   <div class="grup-input koment-grup">
                     <label for="grup-input3"></label>
                     <input
-                      class="input"
+                      class="koment-input"
                       type="text"
                       id="grup-input3"
                       placeholder="Введіть текст"
@@ -125,11 +125,13 @@
                   </div>
                 </li>
                 <li class="grup-item">
-                  <input
-                    class="grup-check_mark"
-                    type="checkbox"
-                    placeholder="Введіть текст"
-                  />
+                  <label for="checkbox">
+                    <input
+                      id="checkbox"
+                      class="grup-check_mark"
+                      type="checkbox"
+                      placeholder="Введіть текст"
+                  /></label>
 
                   <p class="grup-text">
                     Погоджуюся з розсилкою та приймаю

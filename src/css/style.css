@@ -32,6 +32,7 @@ img {
   height: auto;
 }
 .no-scrole {
+  display: block;
   overflow: hidden;
 }
 .container {
@@ -73,14 +74,44 @@ img {
   display: flex;
   gap: 50px;
 }
+.nav-link.studio-link {
+  color: var(--color-text-hover);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &::after {
+    width: 100%;
+    height: 4px;
+    background-color: var(--color-text-hover);
+    border-radius: 2px;
+    content: "";
+    position: absolute;
+    bottom: -35px;
+    left: 0;
+  }
+}
+.nav-link.portfolio-link {
+  color: var(--color-text-hover);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &::after {
+    width: 100%;
+    height: 4px;
+    background-color: var(--color-text-hover);
+    border-radius: 2px;
+    content: "";
+    position: absolute;
+    bottom: -35px;
+    left: 0;
+  }
+}
 .nav-link {
   font-weight: 500;
   color: var(--color-text-title);
   letter-spacing: 0.02em;
   position: relative;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav-link:hover {
   color: var(--color-text-hover);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav-link:hover::after {
   width: 100%;
@@ -101,10 +132,12 @@ img {
   display: flex;
   align-items: center;
   gap: 10px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: inherit;
 }
 .addres-link:hover {
   color: var(--color-text-hover);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .addres-link:hover .addres-photo {
   fill: var(--color-text-hover);
@@ -170,7 +203,7 @@ img {
   background-color: whitesmoke;
   position: absolute;
   width: 530px;
-  height: 580px;
+  height: 600px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -190,8 +223,10 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-clouse:hover {
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   fill: var(--color-text-hover);
 }
 .photo-close {
@@ -216,10 +251,20 @@ img {
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01;
-  padding-bottom: 4px;
+}
+.grup-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.grup-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
 }
 .grup-item:nth-child(5) {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   padding: 20px 55px 30px;
@@ -232,19 +277,26 @@ img {
   height: 40px;
   padding: 12px 0;
   display: flex;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .grup-input:hover {
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border: var(--color-text-hover) solid 1px;
 }
 .koment-grup {
-  height: 120px;
+  padding-bottom: 100px;
+}
+.koment-input {
+  height: 20px;
 }
 .input-photo {
   width: 18px;
   height: 18px;
   margin: 0 12px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .grup-input:hover .input-photo {
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   fill: var(--color-text-hover);
 }
 .input {
@@ -320,6 +372,7 @@ img {
   text-align: center;
   color: var(--color-text-logo);
   padding-top: 95px;
+  padding-bottom: 50px;
 }
 .work-list {
   display: flex;
@@ -394,10 +447,12 @@ img {
   display: flex;
   align-items: center;
   padding: 12px;
+  border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .teammate-link:hover {
   background-color: var(--color-text-hover);
-  border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .teammate-picture {
   width: 20px;
@@ -434,18 +489,22 @@ img {
   border-radius: 4px;
   display: flex;
   align-items: center;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   justify-content: center;
 }
 .clients-link:hover {
   border: 1px solid var(--color-text-hover);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-photo {
   width: 106px;
   height: 60px;
   fill: var(--color-text-photo);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-link:hover .clients-photo {
   fill: var(--color-text-hover);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer {
   background-color: var(--color-bg-primary);
@@ -481,6 +540,7 @@ img {
   letter-spacing: 0.03em;
 }
 .footer-contacts-link:hover {
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: var(--color-text-hover);
 }
 .footer-contacts-item {
@@ -499,11 +559,13 @@ img {
   display: flex;
   align-items: center;
   padding: 12px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border-radius: 50%;
   background-color: var(--color-bg-wheit10);
 }
 .about-link:hover {
   background-color: var(--color-text-hover);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .about-photo {
   width: 20px;
@@ -567,8 +629,10 @@ img {
   margin-bottom: 50px;
   padding: 6px 25px;
   border-radius: 4px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .filters-button:hover {
+  transition: color background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: var(--color-text-hover);
   color: var(--color-text-secendary);
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08),
@@ -587,23 +651,28 @@ img {
 .product {
   padding-bottom: 30px;
   overflow: hidden;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .product:hover {
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08),
     0 3px 1px 0 rgba(0, 0, 0, 0.1);
 }
 .product-photo {
   position: relative;
+  overflow: hidden;
 }
-.product-photo:hover .product-about {
+.product:hover .product-about {
   opacity: 0.9;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .product-about {
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 63px 24px;
   position: absolute;
   top: 0;
-  left: -1px;
-  width: calc(100% + 1px);
+  left: 0;
+  width: 100%;
   height: 100%;
   transition: 0.5s;
   opacity: 0;
@@ -615,37 +684,37 @@ img {
   text-align: center;
   color: var(--color-text-secendary);
 }
-.product-photo:hover .product-about.pate-dovn {
+.product:hover .product-about.pate-dovn {
   transform: translateY(0);
   opacity: 0.9;
 }
 .product-about.pate-dovn {
   transform: translateY(-100%);
-  transition: transform 0.5s ease;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.product-photo:hover .product-about.pate-up {
+.product:hover .product-about.pate-up {
   transform: translateY(0);
   opacity: 0.9;
 }
 .product-about.pate-up {
   transform: translateY(100%);
-  transition: transform 0.5s ease;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.product-photo:hover .product-about.pate-right {
+.product:hover .product-about.pate-right {
   transform: translateX(0);
   opacity: 0.9;
 }
 .product-about.pate-right {
   transform: translateX(100%);
-  transition: transform 0.5s ease;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.product-photo:hover .product-about.pate-left {
+.product:hover .product-about.pate-left {
   transform: translateX(0);
   opacity: 0.9;
 }
 .product-about.pate-left {
   transform: translateX(-100%);
-  transition: transform 0.5s ease;
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .product-name {
   font-weight: 700;
