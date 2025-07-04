@@ -107,11 +107,10 @@ img {
   color: var(--color-text-title);
   letter-spacing: 0.02em;
   position: relative;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav-link:hover {
   color: var(--color-text-hover);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav-link:hover::after {
   width: 100%;
@@ -132,15 +131,15 @@ img {
   display: flex;
   align-items: center;
   gap: 10px;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: inherit;
 }
 .addres-link:hover {
   color: var(--color-text-hover);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .addres-link:hover .addres-photo {
   fill: var(--color-text-hover);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .addres-photo {
   width: 16px;
@@ -223,10 +222,9 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-clouse:hover {
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   fill: var(--color-text-hover);
 }
 .photo-close {
@@ -277,10 +275,9 @@ img {
   height: 40px;
   padding: 12px 0;
   display: flex;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .grup-input:hover {
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border: var(--color-text-hover) solid 1px;
 }
 .koment-grup {
@@ -293,10 +290,9 @@ img {
   width: 18px;
   height: 18px;
   margin: 0 12px;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .grup-input:hover .input-photo {
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   fill: var(--color-text-hover);
 }
 .input {
@@ -452,12 +448,12 @@ img {
 }
 .teammate-link:hover {
   background-color: var(--color-text-hover);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .teammate-picture {
   width: 20px;
   height: 20px;
   fill: var(--color-text-photo);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .teammate-link:hover .teammate-picture {
   fill: var(--color-text-secendary);
@@ -494,7 +490,6 @@ img {
 }
 .clients-link:hover {
   border: 1px solid var(--color-text-hover);
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-photo {
   width: 106px;
@@ -504,7 +499,6 @@ img {
 }
 .clients-link:hover .clients-photo {
   fill: var(--color-text-hover);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer {
   background-color: var(--color-bg-primary);
@@ -538,9 +532,9 @@ img {
   color: var(--color-text-info);
   line-height: 1.71;
   letter-spacing: 0.03em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-contacts-link:hover {
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: var(--color-text-hover);
 }
 .footer-contacts-item {
@@ -559,13 +553,12 @@ img {
   display: flex;
   align-items: center;
   padding: 12px;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color, background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border-radius: 50%;
   background-color: var(--color-bg-wheit10);
 }
 .about-link:hover {
   background-color: var(--color-text-hover);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .about-photo {
   width: 20px;
@@ -629,10 +622,9 @@ img {
   margin-bottom: 50px;
   padding: 6px 25px;
   border-radius: 4px;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color, background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .filters-button:hover {
-  transition: color background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: var(--color-text-hover);
   color: var(--color-text-secendary);
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08),
@@ -651,10 +643,9 @@ img {
 .product {
   padding-bottom: 30px;
   overflow: hidden;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .product:hover {
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08),
     0 3px 1px 0 rgba(0, 0, 0, 0.1);
 }
@@ -664,7 +655,6 @@ img {
 }
 .product:hover .product-about {
   opacity: 0.9;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .product-about {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
