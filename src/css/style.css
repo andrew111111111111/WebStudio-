@@ -26,11 +26,7 @@ body {
   color: var(--color-text-primary);
   line-height: 1.14;
 }
-img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
+
 .no-scrole {
   display: block;
   overflow: hidden;
