@@ -19,6 +19,7 @@ button {
   text-decoration: none;
   color: inherit;
   cursor: context-menu;
+  display: inline-block;
 }
 a {
   text-decoration-line: none;
