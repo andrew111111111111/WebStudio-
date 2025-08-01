@@ -1,5 +1,5 @@
 .team {
-  background-color: var(--color-bg-filters_button);
+  background-color: $color-bg-filters_button;
 }
 .team__list {
   display: flex;
@@ -8,7 +8,7 @@
 .team__title {
   font-size: 36px;
   font-weight: 700;
-  color: var(--color-text-title);
+  color: $color-text-title;
   line-height: 1.16;
   letter-spacing: 0.03em;
   text-align: center;
@@ -18,7 +18,7 @@
 .teammate {
   border-radius: 4px;
   padding-bottom: 30px;
-  background-color: var(--color-text-secendary);
+  background-color: $color-text-secendary;
   margin-bottom: 95px;
   display: flex;
   align-items: center;
@@ -32,7 +32,7 @@
 .teammate__name {
   font-size: 16px;
   font-weight: 700;
-  color: var(--color-text-title);
+  color: $color-text-title;
   line-height: 1.18;
   letter-spacing: 0.03em;
   margin-bottom: 10px;
@@ -54,16 +54,17 @@
   padding: 12px;
   border-radius: 50%;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    background-color: $color-text-hover;
+    &.teammate__picture {
+      fill: $color-text-secendary;
+    }
+  }
 }
-.teammate__link:hover {
-  background-color: var(--color-text-hover);
-}
+
 .teammate__picture {
   width: 20px;
   height: 20px;
-  fill: var(--color-text-photo);
+  fill: $color-text-photo;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.teammate__link:hover .teammate__picture {
-  fill: var(--color-text-secendary);
 }

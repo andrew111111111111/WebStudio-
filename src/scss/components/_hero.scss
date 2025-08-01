@@ -1,9 +1,8 @@
 .hero {
-  background-color: var(--color-bg-primary);
   background-image: linear-gradient(
       to top,
-      var(--color-bg-gradient),
-      var(--color-bg-gradient)
+      $color-bg-gradient,
+      $color-bg-gradient
     ),
     url(../img/hero.webp);
   background-position: center;
@@ -18,7 +17,7 @@
 }
 .hero__title {
   font-size: 44px;
-  color: var(--color-text-secendary);
+  color: $color-text-secendary;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -27,11 +26,11 @@
 }
 .hero__button {
   border-radius: 4px;
-  font-family: var(--font-primary);
+  font-family: $font-primary;
   font-size: 16px;
   font-weight: 700;
-  color: var(--color-text-secendary);
-  background-color: var(--color-text-hover);
+  color: $color-text-secendary;
+  background-color: $color-text-hover;
   padding: 10px 30px;
   border-radius: 4px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);

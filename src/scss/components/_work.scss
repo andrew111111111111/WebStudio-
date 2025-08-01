@@ -6,7 +6,7 @@
   font-size: 24px;
   letter-spacing: 0.03em;
   text-align: center;
-  color: var(--color-text-logo);
+  color: $color-text-logo;
   padding-top: 95px;
   padding-bottom: 50px;
 }
@@ -20,12 +20,12 @@
 .work__subtitle {
   font-weight: 700;
   letter-spacing: 3%;
-  color: #fff;
+  color: $color-text-secendary;
   text-align: center;
   width: 100%;
   padding: 27px 0;
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: var(--color-bg-work);
+  background-color: $color-bg-work;
 }

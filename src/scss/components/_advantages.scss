@@ -7,58 +7,32 @@
 .advantages__title {
   font-size: 14px;
   font-weight: 700;
-  color: var(--color-text-title);
+  color: $color-text-title;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-
-.advantages__item--warning::before {
+.advantages__item::before {
   content: "";
-  background-image: url(../img/antenna.svg);
   display: block;
   height: 120px;
-  background-color: var(--color-bg-filters_button);
+  background-color: $color-bg-filters_button;
   margin-bottom: 30px;
   border-radius: 4px;
   background-size: auto;
   background-repeat: no-repeat;
   background-position: center;
+}
+.advantages__item--warning::before {
+  background-image: url(../img/antenna.svg);
 }
 .advantages__item--punctuality::before {
-  content: "";
   background-image: url(../img/clock.svg);
-  display: block;
-  height: 120px;
-  background-color: var(--color-bg-filters_button);
-  margin-bottom: 30px;
-  border-radius: 4px;
-  background-size: auto;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 .advantages__item--planning::before {
-  content: "";
   background-image: url(../img/diagram.svg);
-  display: block;
-  height: 120px;
-  background-color: var(--color-bg-filters_button);
-  margin-bottom: 30px;
-  border-radius: 4px;
-  background-size: auto;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 .advantages__item--technology::before {
-  content: "";
   background-image: url(../img/astronaut.svg);
-  display: block;
-  height: 120px;
-  background-color: var(--color-bg-filters_button);
-  margin-bottom: 30px;
-  border-radius: 4px;
-  background-size: auto;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 .advantages__text {
   line-height: 1.71;
