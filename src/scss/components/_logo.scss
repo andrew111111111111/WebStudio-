@@ -1,0 +1,25 @@
+.logo {
+  font-family: var(--font-secendary);
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--color-text-hover);
+  line-height: 1.38;
+  letter-spacing: 0.03em;
+}
+.header__logo {
+  font-family: var(--font-secendary);
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--color-text-logo);
+  line-height: 1.38;
+  letter-spacing: 0.03em;
+}
+.footer__logo {
+  font-family: var(--font-secendary);
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--color-text-secendary);
+  line-height: 1.38;
+  letter-spacing: 0.03em;
+  padding-top: 60px;
+}

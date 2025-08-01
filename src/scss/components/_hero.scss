@@ -11,12 +11,12 @@
   background-size: cover;
   padding: 200px 0;
 }
-.hero-content {
+.hero__content {
   display: flex;
   align-items: center;
   flex-direction: column;
 }
-.hero-title {
+.hero__title {
   font-size: 44px;
   color: var(--color-text-secendary);
   line-height: 1.36;
@@ -25,7 +25,7 @@
   width: 696px;
   text-align: center;
 }
-.hero-button {
+.hero__button {
   border-radius: 4px;
   font-family: var(--font-primary);
   font-size: 16px;

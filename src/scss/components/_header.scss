@@ -1,36 +1,20 @@
 .header {
   padding: 25px 0px;
 }
-.header-contect {
+.header__contect {
   display: flex;
   gap: 95px;
   align-items: center;
 }
 
-.logo {
-  font-family: var(--font-secendary);
-  font-size: 26px;
-  font-weight: 700;
-  color: var(--color-text-hover);
-  line-height: 1.38;
-  letter-spacing: 0.03em;
-}
-.logo-black {
-  font-family: var(--font-secendary);
-  font-size: 26px;
-  font-weight: 700;
-  color: var(--color-text-logo);
-  line-height: 1.38;
-  letter-spacing: 0.03em;
-}
 .nav {
   flex-grow: 1;
 }
-.nav-list {
+.nav__list {
   display: flex;
   gap: 50px;
 }
-.nav-link.studio-link {
+.nav__link.studio__link {
   color: var(--color-text-hover);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &::after {
@@ -44,7 +28,7 @@
     left: 0;
   }
 }
-.nav-link.portfolio-link {
+.nav__link.portfolio__link {
   color: var(--color-text-hover);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &::after {
@@ -58,7 +42,7 @@
     left: 0;
   }
 }
-.nav-link {
+.nav__link {
   overflow: hidden;
   font-weight: 500;
   color: var(--color-text-title);
@@ -67,10 +51,10 @@
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   display: inline;
 }
-.nav-link:hover {
+.nav__link:hover {
   color: var(--color-text-hover);
 }
-.nav-link:hover::after {
+.nav__link--after:hover {
   width: 100%;
   height: 4px;
   background-color: var(--color-text-hover);
@@ -80,13 +64,13 @@
   bottom: -35px;
   left: 0;
 }
-.nav-link .nav-link-after {
+.nav__link .nav__link--after {
   animation-name: link_hover;
   animation-duration: 2s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
-.nav-link-after {
+.nav__link--after {
   height: 4px;
   width: 4px;
   background-color: var(--color-text-secendary);
@@ -110,11 +94,11 @@
     transform: translateX(1000%);
   }
 }
-.header-list {
+.header__list {
   display: flex;
   gap: 50px;
 }
-.addres-link {
+.addres__link {
   color: var(--color-text-primary);
   display: flex;
   align-items: center;
@@ -122,14 +106,14 @@
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: inherit;
 }
-.addres-link:hover {
+.addres__link:hover {
   color: var(--color-text-hover);
 }
-.addres-link:hover .addres-photo {
+.addres__link:hover .addres__photo {
   fill: var(--color-text-hover);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.addres-photo {
+.addres__photo {
   width: 16px;
   height: 12px;
   fill: var(--color-text-primary);

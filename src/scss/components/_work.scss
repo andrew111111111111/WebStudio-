@@ -2,7 +2,7 @@
   padding-top: 50px;
   margin-bottom: 95px;
 }
-.work-title {
+.work__title {
   font-size: 24px;
   letter-spacing: 0.03em;
   text-align: center;
@@ -10,14 +10,14 @@
   padding-top: 95px;
   padding-bottom: 50px;
 }
-.work-list {
+.work__list {
   display: flex;
   gap: 30px;
 }
-.work-grup {
+.work__grup {
   position: relative;
 }
-.work-subtitle {
+.work__subtitle {
   font-weight: 700;
   letter-spacing: 3%;
   color: #fff;

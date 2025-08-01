@@ -1,38 +1,66 @@
-.advantages-list {
+.advantages__list {
   padding-top: 95px;
   display: flex;
   justify-content: center;
   gap: 30px;
 }
-.advantages-title {
+.advantages__title {
   font-size: 14px;
   font-weight: 700;
   color: var(--color-text-title);
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-.advantages-item::before {
+
+.advantages__item--warning::before {
   content: "";
+  background-image: url(../img/antenna.svg);
   display: block;
   height: 120px;
   background-color: var(--color-bg-filters_button);
   margin-bottom: 30px;
   border-radius: 4px;
-  background-image: url(../img/antenna.svg);
   background-size: auto;
   background-repeat: no-repeat;
   background-position: center;
 }
-.advantages-item:nth-child(2)::before {
+.advantages__item--punctuality::before {
+  content: "";
   background-image: url(../img/clock.svg);
+  display: block;
+  height: 120px;
+  background-color: var(--color-bg-filters_button);
+  margin-bottom: 30px;
+  border-radius: 4px;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
 }
-.advantages-item:nth-child(3)::before {
+.advantages__item--planning::before {
+  content: "";
   background-image: url(../img/diagram.svg);
+  display: block;
+  height: 120px;
+  background-color: var(--color-bg-filters_button);
+  margin-bottom: 30px;
+  border-radius: 4px;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
 }
-.advantages-item:nth-child(4)::before {
+.advantages__item--technology::before {
+  content: "";
   background-image: url(../img/astronaut.svg);
+  display: block;
+  height: 120px;
+  background-color: var(--color-bg-filters_button);
+  margin-bottom: 30px;
+  border-radius: 4px;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
 }
-.advantages-text {
+.advantages__text {
   line-height: 1.71;
   padding-top: 10px;
 }

@@ -1,14 +1,14 @@
 .backdrop {
   position: fixed;
   background-color: rgba(0, 0, 0, 0.45);
-  inset: 0;
+  inset: 9999;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.backdrop.is-hidden {
+.backdrop.is__hidden {
   opacity: 0;
   pointer-events: none;
 }
-.backdrop.is-hidden .modal {
+.backdrop.is__hidden .modal {
   transform: translate(-50%, 100%);
 }
 .modal {
@@ -25,7 +25,7 @@
   align-items: center;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.button-clouse {
+.button__clouse {
   position: absolute;
   right: 10px;
   top: 10px;
@@ -38,14 +38,14 @@
   justify-content: center;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.button-clouse:hover {
+.button__clouse:hover {
   fill: var(--color-text-hover);
 }
-.photo-close {
+.photo__close {
   width: 11px;
   height: 11px;
 }
-.modal-title {
+.modal__title {
   font-style: 20px;
   color: var(--color-text-title);
   font-weight: 700;
@@ -53,28 +53,28 @@
   letter-spacing: 0.03;
   padding: 40px 0 12px;
 }
-.modal-grup {
+.modal__grup {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 10px;
 }
-.grup-text {
+.grup__text {
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01;
 }
-.grup-list {
+.grup__list {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-.grup-item {
+.grup__item {
   display: flex;
   flex-direction: column;
   gap: 4px;
 }
-.grup-item:nth-child(5) {
+.grup__item--agree {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -82,7 +82,7 @@
   padding: 20px 55px 30px;
   gap: 7px;
 }
-.grup-input {
+.grup__input {
   border: var(--color-bg-modal) solid 1px;
   border-radius: 4px;
   width: 450px;
@@ -91,22 +91,22 @@
   display: flex;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.grup-input:hover {
+.grup__input:hover {
   border: var(--color-text-hover) solid 1px;
 }
-.koment-grup {
+.koment__grup {
   padding-bottom: 100px;
 }
-.koment-input {
+.koment__input {
   height: 20px;
 }
-.input-photo {
+.input__photo {
   width: 18px;
   height: 18px;
   margin: 0 12px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.grup-input:hover .input-photo {
+.grup__input:hover .input__photo {
   fill: var(--color-text-hover);
 }
 .input {
@@ -115,14 +115,14 @@
   display: flex;
   align-items: center;
 }
-.grup-text:nth-child(5) {
+.grup__text--agree {
   text-align: center;
 }
-.grup-link {
+.grup__link {
   color: var(--color-text-hover);
   text-decoration-line: underline;
 }
-.modal-acceptance {
+.modal__acceptance {
   font-weight: 700;
   font-size: 16px;
   line-height: 187%;
