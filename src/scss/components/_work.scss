@@ -3,12 +3,9 @@
   margin-bottom: 95px;
 }
 .work__title {
-  font-size: 24px;
-  letter-spacing: 0.03em;
+  @include text(24px);
   text-align: center;
-  color: $color-text-logo;
-  padding-top: 95px;
-  padding-bottom: 50px;
+  @include titles(1.16, 0.03em, 95px 0 50px, 36px);
 }
 .work__list {
   display: flex;
@@ -18,7 +15,7 @@
   position: relative;
 }
 .work__subtitle {
-  font-weight: 700;
+  @include text(14px, 700);
   letter-spacing: 3%;
   color: $color-text-secendary;
   text-align: center;

@@ -6,11 +6,8 @@
   gap: 30px;
 }
 .team__title {
-  font-size: 36px;
-  font-weight: 700;
-  color: $color-text-title;
-  line-height: 1.16;
-  letter-spacing: 0.03em;
+  @include text(36px, 700, 1.16);
+  @include titles(1.16, 0.03em, 95px 050px, 36px);
   text-align: center;
   padding-top: 95px;
   padding-bottom: 50px;
@@ -20,33 +17,27 @@
   padding-bottom: 30px;
   background-color: $color-text-secendary;
   margin-bottom: 95px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+  @include flex(0);
   box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
     0 1px 3px 0 rgba(0, 0, 0, 0.12);
 }
-.teammate__img {
+.teammate__photo {
   padding-bottom: 30px;
 }
 .teammate__name {
-  font-size: 16px;
-  font-weight: 700;
+  @include text(16px, 700, 1.18);
   color: $color-text-title;
-  line-height: 1.18;
   letter-spacing: 0.03em;
   margin-bottom: 10px;
 }
 .teammete__role {
-  font-size: 16px;
+  @include text(16px);
   line-height: 1.18;
   letter-spacing: 0.03em;
   padding-bottom: 30px;
 }
 .teammate__list {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
+  @include flex(10px);
 }
 .teammate__link {
   display: flex;

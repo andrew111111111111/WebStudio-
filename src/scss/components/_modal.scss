@@ -20,9 +20,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include flex(0);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button__clouse {
@@ -33,9 +31,7 @@
   border-radius: 50%;
   width: 30px;
   height: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flex(0);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover {
     fill: $color-text-hover;
@@ -46,41 +42,26 @@
   height: 11px;
 }
 .modal__title {
-  font-style: 20px;
-  color: $color-text-title;
-  font-weight: 700;
-  line-height: 1.15;
-  letter-spacing: 0.03;
-  padding: 40px 0 12px;
+  @include text(20px, 700, 1.15);
+  @include titles(1.15, 0.03em, 40px 0 12px, 20px);
 }
 .modal__grup {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
+  @include flex(10px);
 }
 .grup__text {
-  font-size: 12px;
-  line-height: 1.16;
+  @include text(20px, 700, 1.16);
   letter-spacing: 0.01;
 }
 .grup__list {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+  @include flex(10px);
 }
 .grup__item {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
+  @include flex(4px);
 }
 .grup__item--agree {
-  display: flex;
+  @include flex(7px);
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
   padding: 20px 55px 30px;
-  gap: 7px;
 }
 .grup__input {
   border: $color-bg-modal solid 1px;
@@ -123,9 +104,7 @@
   text-decoration-line: underline;
 }
 .modal__acceptance {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 187%;
+  @include text(16px, 400, 1.71);
   letter-spacing: 0.06em;
   text-align: center;
   color: $color-text-secendary;

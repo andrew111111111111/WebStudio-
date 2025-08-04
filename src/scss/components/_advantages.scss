@@ -1,15 +1,10 @@
 .advantages__list {
   padding-top: 95px;
-  display: flex;
-  justify-content: center;
-  gap: 30px;
+  @include flex(30px);
 }
 .advantages__title {
-  font-size: 14px;
-  font-weight: 700;
-  color: $color-text-title;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
+  @include text(36px, 700);
+  @include titles(1.16, 0.03em, 0, 36px);
 }
 .advantages__item::before {
   content: "";
@@ -18,9 +13,7 @@
   background-color: $color-bg-filters_button;
   margin-bottom: 30px;
   border-radius: 4px;
-  background-size: auto;
-  background-repeat: no-repeat;
-  background-position: center;
+  @extend %background;
 }
 .advantages__item--warning::before {
   background-image: url(../img/antenna.svg);
@@ -35,6 +28,6 @@
   background-image: url(../img/astronaut.svg);
 }
 .advantages__text {
-  line-height: 1.71;
+  @include text(1.17);
   padding-top: 10px;
 }

@@ -1,14 +1,10 @@
 .filters__list {
-  display: flex;
-  justify-content: center;
-  gap: 8px;
+  @include flex(8px);
 }
 .portfolio__list {
   padding-bottom: 95px;
-  display: flex;
-  justify-content: center;
+  @include flex(30px);
   flex-wrap: wrap;
-  gap: 30px;
 }
 .portfolio__item {
   flex-basis: calc((100% - 60px) / 3);
@@ -42,9 +38,7 @@
   transition: 0.5s;
   opacity: 0;
   background-color: $color-text-hover;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 156%;
+  @include text(18px, 400, 1.87);
   letter-spacing: 3%;
   text-align: start;
   color: $color-text-secendary;
@@ -53,8 +47,7 @@
 }
 
 .product__name {
-  font-weight: 700;
-  font-size: 18px;
+  @include text(18px, 700);
   color: $color-text-logo;
   line-height: 2;
   letter-spacing: 0.06em;
@@ -62,8 +55,7 @@
   padding-bottom: 4px;
 }
 .product__filters {
-  font-size: 16px;
-  line-height: 1.87;
+  @include text(16px, 400, 1.87);
   letter-spacing: 0.03em;
   padding-bottom: 20px;
 }

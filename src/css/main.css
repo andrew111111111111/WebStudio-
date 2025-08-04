@@ -79,8 +79,8 @@ body {
 .filters__button {
   font-weight: 500;
   font-size: 16px;
-  color: var(--color-text-logo);
-  background-color: var(--color-bg-filters_button);
+  color: #000000;
+  background-color: #f5f4fa;
   line-height: 1.62;
   letter-spacing: 0.03em;
   text-align: center;
@@ -90,15 +90,16 @@ body {
   transition: color, background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .filters__button:hover {
-  background-color: var(--color-text-hover);
-  color: var(--color-text-secendary);
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08), 0 3px 1px 0 rgba(0, 0, 0, 0.1);
+  background-color: #2196f3;
+  color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08),
+    0 3px 1px 0 rgba(0, 0, 0, 0.1);
 }
 
 .button {
   border-radius: 4px;
-  background-color: var(--color-text-hover);
-  color: var(--color-text-secendary);
+  background-color: #2196f3;
+  color: #ffffff;
   width: 200px;
   height: 50px;
   display: flex;
@@ -109,28 +110,28 @@ body {
 }
 
 .logo {
-  font-family: var(--font-secendary);
+  font-family: "Raleway";
   font-size: 26px;
   font-weight: 700;
-  color: var(--color-text-hover);
+  color: #2196f3;
   line-height: 1.38;
   letter-spacing: 0.03em;
 }
 
 .header__logo {
-  font-family: var(--font-secendary);
+  font-family: "Raleway";
   font-size: 26px;
   font-weight: 700;
-  color: var(--color-text-logo);
+  color: #000000;
   line-height: 1.38;
   letter-spacing: 0.03em;
 }
 
 .footer__logo {
-  font-family: var(--font-secendary);
+  font-family: "Raleway";
   font-size: 26px;
   font-weight: 700;
-  color: var(--color-text-secendary);
+  color: #ffffff;
   line-height: 1.38;
   letter-spacing: 0.03em;
   padding-top: 60px;
@@ -255,7 +256,7 @@ body {
 .addres__link:hover {
   color: #2196f3;
 }
-.addres__link:hover.addres__photo {
+.addres__link:hover .addres__photo {
   fill: #2196f3;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -267,7 +268,12 @@ body {
 }
 
 .hero {
-  background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero.webp);
+  background-image: linear-gradient(
+      to top,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../img/hero.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -570,7 +576,8 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
-  box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+    0 1px 3px 0 rgba(0, 0, 0, 0.12);
 }
 
 .teammate__img {
@@ -609,7 +616,7 @@ body {
 .teammate__link:hover {
   background-color: #2196f3;
 }
-.teammate__link:hover.teammate__picture {
+.teammate__link:hover .teammate__picture {
   fill: #ffffff;
 }
 
@@ -657,7 +664,7 @@ body {
 .clients__link:hover {
   border: 1px solid #2196f3;
 }
-.clients__link:hover.clients__photo {
+.clients__link:hover .clients__photo {
   fill: #2196f3;
 }
 
@@ -692,9 +699,10 @@ body {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .product:hover {
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08), 0 3px 1px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08),
+    0 3px 1px 0 rgba(0, 0, 0, 0.1);
 }
-.product:hover.product__about {
+.product:hover .product__about {
   opacity: 0.9;
   transform: translateY(0);
 }

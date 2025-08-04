@@ -1,9 +1,7 @@
 body {
   font-family: $font-primary;
-  font-size: 14px;
-  font-weight: 400;
+  @include text(14px, 400, 1.14);
   color: $color-text-primary;
-  line-height: 1.14;
 }
 
 .no-scrole {
