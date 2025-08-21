@@ -146,19 +146,15 @@ body {
   gap: 95px;
   align-items: center;
 }
-
-.nav {
-  flex-grow: 1;
+.nav__item--mobile {
+  opacity: 1;
+  pointer-events: all;
+  fill: #000000;
 }
-
-.nav__list {
-  display: flex;
-  gap: 50px;
-}
-
 .nav__link.studio__link {
   color: #2196f3;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0;
 }
 .nav__link.studio__link::after {
   width: 100%;
@@ -169,11 +165,13 @@ body {
   position: absolute;
   bottom: -35px;
   left: 0;
+  opacity: 0;
 }
 
 .nav__link.portfolio__link {
   color: #2196f3;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0;
 }
 .nav__link.portfolio__link::after {
   width: 100%;
@@ -184,6 +182,7 @@ body {
   position: absolute;
   bottom: -35px;
   left: 0;
+  opacity: 0;
 }
 
 .nav__link {
@@ -194,9 +193,11 @@ body {
   position: relative;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   display: inline;
+  opacity: 0;
 }
 .nav__link:hover {
   color: #2196f3;
+  opacity: 0;
 }
 .nav__link.nav__link--after {
   animation-name: link_hover;
@@ -252,21 +253,28 @@ body {
   gap: 10px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: inherit;
+  opacity: 0;
+  pointer-events: none;
 }
 .addres__link:hover {
   color: #2196f3;
+  opacity: 0;
+  pointer-events: none;
 }
 .addres__link:hover .addres__photo {
   fill: #2196f3;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0;
+  pointer-events: none;
 }
 
 .addres__photo {
   width: 16px;
   height: 12px;
   fill: #757575;
+  opacity: 0;
+  pointer-events: none;
 }
-
 .hero {
   background-image: linear-gradient(
       to top,
@@ -469,6 +477,7 @@ body {
   display: flex;
   justify-content: center;
   gap: 30px;
+  flex-direction: column;
 }
 
 .advantages__title {
@@ -482,6 +491,7 @@ body {
 .advantages__item::before {
   content: "";
   display: block;
+  max-width: 450px;
   height: 120px;
   background-color: #f5f4fa;
   margin-bottom: 30px;
@@ -529,6 +539,7 @@ body {
 .work__list {
   display: flex;
   gap: 30px;
+  flex-wrap: wrap;
 }
 
 .work__grup {
@@ -555,6 +566,8 @@ body {
 .team__list {
   display: flex;
   gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .team__title {
@@ -580,8 +593,9 @@ body {
     0 1px 3px 0 rgba(0, 0, 0, 0.12);
 }
 
-.teammate__img {
+.teammate__photo {
   padding-bottom: 30px;
+  width: 450px;
 }
 
 .teammate__name {
@@ -649,6 +663,7 @@ body {
   display: flex;
   justify-content: center;
   gap: 30px;
+  flex-wrap: wrap;
 }
 
 .clients__link {
@@ -679,6 +694,7 @@ body {
   display: flex;
   justify-content: center;
   gap: 8px;
+  flex-wrap: wrap;
 }
 
 .portfolio__list {
@@ -697,6 +713,7 @@ body {
   padding-bottom: 30px;
   overflow: hidden;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  width: 450px;
 }
 .product:hover {
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08),
@@ -757,13 +774,17 @@ body {
 
 .footer__container {
   display: flex;
-  justify-content: flex-start;
-  align-items: start;
+  justify-content: center;
+  align-items: center;
   gap: 70px;
+  flex-direction: column;
 }
 
 .contacts {
   padding-bottom: 60px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .contacts__address {
@@ -790,6 +811,7 @@ body {
 .about__title {
   color: #ffffff;
   padding: 12px 0px 20px;
+  text-align: center;
 }
 
 .about__list {
@@ -821,12 +843,14 @@ body {
   letter-spacing: 3%;
   color: #ffffff;
   padding-bottom: 20px;
+  text-align: center;
 }
 
 .mewsletter__inputs {
   display: flex;
   justify-content: center;
   gap: 12px;
+  flex-wrap: wrap;
 }
 
 .inputs__grup {

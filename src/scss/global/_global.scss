@@ -2,6 +2,7 @@ body {
   font-family: $font-primary;
   @include text(14px, 400, 1.14);
   color: $color-text-primary;
+  min-width: 320px;
 }
 
 .no-scrole {

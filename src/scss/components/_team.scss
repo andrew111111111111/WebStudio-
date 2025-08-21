@@ -4,6 +4,8 @@
 .team__list {
   display: flex;
   gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .team__title {
   @include text(36px, 700, 1.16);
@@ -13,6 +15,7 @@
   padding-bottom: 50px;
 }
 .teammate {
+  width: 450px;
   border-radius: 4px;
   padding-bottom: 30px;
   background-color: $color-text-secendary;
@@ -23,6 +26,7 @@
 }
 .teammate__photo {
   padding-bottom: 30px;
+  width: 450px;
 }
 .teammate__name {
   @include text(16px, 700, 1.18);

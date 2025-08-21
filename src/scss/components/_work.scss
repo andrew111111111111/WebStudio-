@@ -10,6 +10,7 @@
 .work__list {
   display: flex;
   gap: 30px;
+  flex-wrap: wrap;
 }
 .work__grup {
   position: relative;

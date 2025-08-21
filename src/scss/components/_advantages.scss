@@ -1,6 +1,8 @@
 .advantages__list {
-  padding-top: 95px;
+  padding-top: 60px;
   @include flex(30px);
+  min-width: 320px;
+  flex-direction: column;
 }
 .advantages__title {
   @include text(36px, 700);
@@ -9,6 +11,7 @@
 .advantages__item::before {
   content: "";
   display: block;
+  max-width: 450px;
   height: 120px;
   background-color: $color-bg-filters_button;
   margin-bottom: 30px;
