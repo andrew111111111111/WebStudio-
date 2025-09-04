@@ -24,7 +24,12 @@
     }
   }
 }
-
+@media (min-width: 768) {
+  .product {
+    width: 354px;
+    height: 404px;
+  }
+}
 .product__photo {
   position: relative;
   overflow: hidden;

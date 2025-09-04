@@ -1,8 +1,16 @@
 .advantages__list {
   padding-top: 60px;
-  @include flex(30px);
+  @include flex(0);
   min-width: 320px;
   flex-direction: column;
+}
+@media (min-width: 768px) {
+  .advantages__list {
+    padding-top: 60px;
+    @include flex(30px);
+    max-width: 738px;
+    flex-direction: column;
+  }
 }
 .advantages__title {
   @include text(36px, 700);

@@ -63,23 +63,23 @@
   padding-bottom: 20px;
   text-align: center;
 }
-.mewsletter__inputs {
+.mewsletter__input {
   @include flex(12px);
 }
-.inputs__grup {
-  border: $color-border-newsletter 1px solid;
-  border-radius: 4px;
-  width: 360px;
+.input__grup {
+  max-width: 360px;
   height: 50px;
   @include flex(0);
-  flex-wrap: wrap;
+  flex-direction: column;
 }
-.inputs__input {
-  width: 350px;
+.input__input {
+  border: $color-border-newsletter 1px solid;
+  border-radius: 4px;
+  max-width: 350px;
   height: 50px;
 }
 
-.inputs__photo {
+.input__photo {
   fill: $color-text-secendary;
   width: 24px;
   height: 24px;

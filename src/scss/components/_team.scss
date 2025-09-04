@@ -6,6 +6,7 @@
   gap: 30px;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
 }
 .team__title {
   @include text(36px, 700, 1.16);

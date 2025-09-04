@@ -27,53 +27,59 @@
         <a class="logo" href="./index.html"
           >Web<span class="header__logo">Studio</span></a
         >
-        <nav class="nav">
-          <ul class="nav__list">
-            <li class="nav__item nav__item--mobile">
-              <a class="nav__link nav__link--mobile" href="#">
-                <svg class="nav__photo">
-                  <use href="./src/img/menu.svg" />
-                </svg>
-              </a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link studio__link" href="./index.html"
-                >Студія
-                <div class="nav__link nav__link--after"></div
-              ></a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="portfolio.html"
-                >Портфоліо
-                <div class="nav__link nav__link--after"></div
-              ></a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="#"
-                >Контакти
-                <div class="nav__link nav__link--after"></div
-              ></a>
-            </li>
-          </ul>
-        </nav>
-        <ul class="header__list">
-          <li class="address__item">
-            <a href="mailto:info@devstudio.com" class="addres__link">
-              <svg class="addres__photo">
-                <use href="./src/img/symbol-defs.svg#icon-envelope" />
-              </svg>
-              info@devstudio.com
-            </a>
-          </li>
-          <li class="address__item">
-            <a class="addres__link" href="tel:+380961111111"
-              ><svg class="addres__photo">
-                <use href="./src/img/symbol-defs.svg#icon-smartphone" />
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+        <div class="mobile-menu">
+          <input
+            class="mobile-menu__check menu__check"
+            type="checkbox"
+            id="toggle-menu"
+          />
+          <label class="mobile-menu__label menu-toggle" for="toggle-menu"
+            ><span class="menu-toggle__line"></span
+          ></label>
+
+          <div class="mobile-menu__wrapp">
+            <nav class="nav">
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a class="nav__link studio__link" href="./index.html"
+                    >Студія
+                    <div class="nav__link nav__link--after"></div
+                  ></a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="portfolio.html"
+                    >Портфоліо
+                    <div class="nav__link nav__link--after"></div
+                  ></a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="#"
+                    >Контакти
+                    <div class="nav__link nav__link--after"></div
+                  ></a>
+                </li>
+              </ul>
+            </nav>
+            <ul class="header__list">
+              <li class="address__item">
+                <a href="mailto:info@devstudio.com" class="addres__link">
+                  <svg class="addres__photo">
+                    <use href="./src/img/symbol-defs.svg#icon-envelope" />
+                  </svg>
+                  info@devstudio.com
+                </a>
+              </li>
+              <li class="address__item">
+                <a class="addres__link" href="tel:+380961111111"
+                  ><svg class="addres__photo">
+                    <use href="./src/img/symbol-defs.svg#icon-smartphone" />
+                  </svg>
+                  +38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -537,19 +543,19 @@
         </div>
         <div class="newsletter">
           <h2 class="newsletter__title">Підпишіться на розсилку</h2>
-          <div class="mewsletter__inputs">
-            <div class="inputs__grup">
-              <label for="inputs__input"></label>
+          <div class="mewsletter__input">
+            <div class="input__grup">
+              <label for="input__input"></label>
               <input
                 placeholder="E-mail"
-                class="inputs__input"
-                id="inputs__input"
+                class="input__input"
+                id="input__input"
                 type="emails"
               />
             </div>
             <button class="button">
               Підписатися
-              <svg class="inputs__photo">
+              <svg class="input__photo">
                 <use href="./src/img/symbol-defs.svg#icon-telegram" />
               </svg>
             </button>
