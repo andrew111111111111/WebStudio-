@@ -9,7 +9,11 @@
     padding-top: 60px;
     @include flex(30px);
     max-width: 738px;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .advantages__item {
+    max-width: 354px;
   }
 }
 .advantages__title {
@@ -20,7 +24,7 @@
 .advantages__item::before {
   content: "";
   display: block;
-  max-width: 450px;
+
   height: 120px;
   background-color: $color-bg-filters_button;
   margin-bottom: 30px;
@@ -43,4 +47,16 @@
 .advantages__text {
   @include text(1.17);
   padding-top: 10px;
+}
+@media (min-width: 1200px) {
+  .advantages__list {
+    padding-top: 60px;
+    @include flex(30px);
+    max-width: 1170px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .advantages__item {
+    width: 270px;
+  }
 }

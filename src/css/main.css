@@ -401,6 +401,11 @@ body {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
 
+@media (max-width: 1200px) {
+  .hero {
+    max-width: 1200px;
+  }
+}
 .backdrop {
   position: fixed;
   background-color: rgba(0, 0, 0, 0.45);
@@ -583,7 +588,11 @@ body {
     align-items: center;
     gap: 30px;
     max-width: 738px;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .advantages__item {
+    max-width: 354px;
   }
 }
 .advantages__title {
@@ -602,7 +611,6 @@ body {
 .advantages__item::before {
   content: "";
   display: block;
-  max-width: 450px;
   height: 120px;
   background-color: #f5f4fa;
   margin-bottom: 30px;
@@ -633,6 +641,21 @@ body {
   padding-top: 10px;
 }
 
+@media (min-width: 1200px) {
+  .advantages__list {
+    padding-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    max-width: 1170px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .advantages__item {
+    width: 270px;
+  }
+}
 .work,
 .work__title,
 .work__list,
@@ -775,6 +798,26 @@ body {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media (min-width: 768px) {
+  .teammate {
+    width: 354px;
+    height: 536px;
+  }
+  .team__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 1200px) {
+  .teammate {
+    width: 270px;
+    height: 458px;
+  }
+  .team__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
 .clients__container {
   display: flex;
   justify-content: center;
@@ -832,6 +875,24 @@ body {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media (min-width: 768px) {
+  .clients__container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .clients__item {
+    width: 226px;
+  }
+}
+@media (min-width: 1200px) {
+  .clients__container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .clients__item {
+    width: 170px;
+  }
+}
 .filters__list {
   display: flex;
   justify-content: center;
@@ -932,6 +993,11 @@ body {
   flex-direction: column;
 }
 
+@media (min-width: 768px) {
+  .footer__container {
+    flex-direction: row;
+  }
+}
 .contacts {
   padding-bottom: 20px;
   display: flex;
@@ -1028,6 +1094,14 @@ body {
   height: 50px;
 }
 
+@media (min-width: 768px) {
+  .input__grup {
+    width: 360px;
+  }
+  .input__input {
+    width: 350px;
+  }
+}
 .input__photo {
   fill: #ffffff;
   width: 24px;
