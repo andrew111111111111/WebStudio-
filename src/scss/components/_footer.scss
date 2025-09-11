@@ -65,12 +65,12 @@
 }
 .mewsletter__input {
   @include flex(12px);
+  flex-direction: column;
 }
 .input__grup {
   max-width: 360px;
   height: 50px;
   @include flex(0);
-  flex-direction: column;
 }
 .input__input {
   border: $color-border-newsletter 1px solid;

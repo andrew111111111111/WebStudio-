@@ -3,6 +3,7 @@
   @include text(26px, 700, 1.38);
   color: $color-text-hover;
   letter-spacing: 0.03em;
+  flex-grow: 1;
 }
 .header__logo {
   font-family: $font-secendary;

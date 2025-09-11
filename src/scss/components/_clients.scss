@@ -4,12 +4,11 @@
 }
 .clients__title {
   color: $color-text-title;
-  @include text(36px, 700, 1.17);
-  @include titles(1.16, 0.03em, 0 0 50px, 36px);
+  @include text(28px, 700, 1.17);
+  @include titles(1.17, 0.03em, 0 0 50px, 28px);
 }
 .clients__list {
   @include flex(30px);
-  display: flex;
   flex-wrap: wrap;
 }
 .clients__item {

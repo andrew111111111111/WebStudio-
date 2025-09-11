@@ -5,9 +5,9 @@
       $color-bg-gradient
     ),
     url(../img/hero.webp);
-  @extend %backgraund;
+  @extend %background;
   padding: 200px 0;
-  width: 480px;
+  max-width: 480px;
 }
 .hero__content {
   display: flex;
@@ -15,9 +15,9 @@
   flex-direction: column;
 }
 .hero__title {
-  @include text(44px, 400, 1.41);
+  @include text(26px, 900, 1.61);
+  @include titles(1.61, 0.06em, 0, 26px);
   color: $color-text-secendary;
-  letter-spacing: 0.06em;
   text-transform: uppercase;
   max-width: 696px;
   text-align: center;

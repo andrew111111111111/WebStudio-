@@ -2,7 +2,6 @@ body {
   font-family: $font-primary;
   @include text(14px, 400, 1.14);
   color: $color-text-primary;
-  min-width: 320px;
 }
 
 .no-scrole {
@@ -10,6 +9,7 @@ body {
   overflow: hidden;
 }
 .container {
+  min-width: 320px;
   max-width: 1200px;
   padding-left: 15px;
   padding-right: 15px;

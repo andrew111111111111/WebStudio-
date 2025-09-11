@@ -13,8 +13,9 @@
   }
 }
 .advantages__title {
-  @include text(36px, 700);
-  @include titles(1.16, 0.03em, 0, 36px);
+  @include text(14px, 700);
+  @include titles(1.14, 0.03em, 0, 14px);
+  text-transform: uppercase;
 }
 .advantages__item::before {
   content: "";
@@ -25,6 +26,7 @@
   margin-bottom: 30px;
   border-radius: 4px;
   @extend %background;
+  background-size: auto;
 }
 .advantages__item--warning::before {
   background-image: url(../img/antenna.svg);

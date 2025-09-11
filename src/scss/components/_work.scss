@@ -1,3 +1,10 @@
+.work,
+.work__title,
+.work__list,
+.work__grup,
+.work__subtitle {
+  display: none;
+}
 @media (min-width: 1200px) {
   .work {
     opacity: 1;
