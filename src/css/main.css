@@ -125,6 +125,11 @@ body {
   flex-grow: 1;
 }
 
+@media (min-width: 768px) {
+  .logo {
+    flex-grow: 0;
+  }
+}
 .header__logo {
   font-family: "Raleway";
   font-size: 26px;
@@ -169,24 +174,58 @@ body {
 }
 
 @media (min-width: 768px) {
+  .header__contect {
+    gap: 92px;
+    flex-direction: row;
+  }
+  .mobile-menu__wrapp {
+    display: flex;
+    gap: 96px;
+  }
   .nav {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 300px;
+    flex-direction: row;
   }
   .nav__list {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 0;
+    gap: 51px;
     flex-direction: row;
   }
   .header__list {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 0;
+    gap: 10px;
+    flex-direction: column;
+  }
+  .addres__link {
+    color: #757575;
+    transition: fill, color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: inherit;
+  }
+  .addres__link:hover {
+    color: #2196f3;
+  }
+  .addres__link:hover.addres__photo {
+    fill: #2196f3;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .addres__photo {
+    width: 16px;
+    height: 12px;
+    fill: #757575;
   }
 }
 @media (min-width: 1200px) {
+  .mobile-menu__wrapp {
+    display: flex;
+    gap: 300px;
+  }
   .nav__link.studio__link {
     color: #2196f3;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -274,28 +313,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 0;
-  }
-  .addres__link {
-    color: #757575;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    transition: fill, color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    background-color: inherit;
-  }
-  .addres__link:hover {
-    color: #2196f3;
-  }
-  .addres__link:hover.addres__photo {
-    fill: #2196f3;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .addres__photo {
-    width: 16px;
-    height: 12px;
-    fill: #757575;
+    gap: 30px;
   }
 }
 .menu__toggle {
@@ -500,16 +518,26 @@ body {
     background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/mobil/x2/hero.webp);
   }
 }
-@media (min-device-pixel-ratio: 2) and (min-resolution: 2) and (min-width: 768px) {
+@media (min-width: 768px) {
   .hero {
     background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/tablet/x2/hero.webp);
     min-width: 768px;
   }
 }
-@media (min-device-pixel-ratio: 2) and (min-resolution: 2) and (min-width: 1200px) {
+@media (min-width: 1200px) {
   .hero {
     background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/tablet/x2/hero.webp);
     min-width: 1200px;
+  }
+}
+@media (min-device-pixel-ratio: 2) and (min-resolution: 2) and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/tablet/x2/hero.webp);
+  }
+}
+@media (min-device-pixel-ratio: 2) and (min-resolution: 2) and (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/tablet/x2/hero.webp);
   }
 }
 .hero__content {
@@ -760,19 +788,19 @@ body {
 }
 
 .advantages__item--warning::before {
-  background-image: url(../img/antenna.svg);
+  background-image: url(../img/svg/antenna.svg);
 }
 
 .advantages__item--punctuality::before {
-  background-image: url(../img/clock.svg);
+  background-image: url(../img/svg/clock.svg);
 }
 
 .advantages__item--planning::before {
-  background-image: url(../img/diagram.svg);
+  background-image: url(../img/svg/diagram.svg);
 }
 
 .advantages__item--technology::before {
-  background-image: url(../img/astronaut.svg);
+  background-image: url(../img/svg/astronaut.svg);
 }
 
 .advantages__text {

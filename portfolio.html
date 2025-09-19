@@ -52,7 +52,7 @@
           <li class="address__item">
             <a href="mailto:info@devstudio.com" class="addres__link">
               <svg class="addres__photo">
-                <use href="./src/img/symbol-defs.svg#icon-envelope" />
+                <use href="./src/img/svg/symbol-defs.svg#icon-envelope" />
               </svg>
               info@devstudio.com
             </a>
@@ -60,7 +60,7 @@
           <li class="address__item">
             <a class="addres__link" href="tel:+380961111111"
               ><svg class="addres__photo">
-                <use href="./src/img/symbol-defs.svg#icon-smartphone" />
+                <use href="./src/img/svg/symbol-defs.svg#icon-smartphone" />
               </svg>
               +38 096 111 11 11</a
             >
@@ -92,18 +92,37 @@
           <ul class="portfolio__list">
             <li class="portfolio__item">
               <article class="product">
-                <div class="product__photo">
-                  <p class="product__about">
+                <picture class="product__photo"
+                  ><p class="product__about">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
                     отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
+                  <source
+                    class="teammate__img"
+                    sizes="270w"
+                    srcset="
+                      ./src/img/desktop/tehnockryak.webp       370w,
+                      ./src/img/desktop/x2/tehnockryak@2x.webp 740w
+                    "
+                    media="(min-width:1200px)"
+                    sizes="270w"
+                    srcset="
+                      ./src/img/tablet/tehnockryak.webp    354w,
+                      ./src/img/tablet/x2/tehnockryak.webp 708w
+                    "
+                    media="(max-width:1199px)"
+                    sizes="270w"
+                    srcset="
+                      ./src/img/mobil/tehnockryak.webp    450w,
+                      ./src/img/mobil/x2/tehnockryak.webp 900w
+                    "
+                    media="(max-width:767px)" />
                   <img
-                    class="product__img"
-                    src="./src/img/tehnockryak.webp"
-                    alt="tehnockryak"
-                  />
-                </div>
+                    class="teammate__img"
+                    src="./src/img/desktop/tehnockryak.webp"
+                    alt="Ігор Дем'яненко"
+                /></picture>
                 <h3 class="product__name">Технокряк</h3>
                 <p class="product__filters">Веб-сайт</p>
               </article>
@@ -111,18 +130,37 @@
 
             <li class="portfolio__item">
               <article class="product">
-                <div class="product__photo">
-                  <p class="product__about">
+                <picture class="product__photo"
+                  ><p class="product__about">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
                     отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
+                  <source
+                    class="teammate__img"
+                    sizes="270w"
+                    srcset="
+                      ./src/img/desktop/golden_star.webp       370w,
+                      ./src/img/desktop/x2/golden_star@2x.webp 740w
+                    "
+                    media="(min-width:1200px)"
+                    sizes="270w"
+                    srcset="
+                      ./src/img/tablet/golden_star.webp    354w,
+                      ./src/img/tablet/x2/golden_star.webp 708w
+                    "
+                    media="(max-width:1199px)"
+                    sizes="270w"
+                    srcset="
+                      ./src/img/mobil/golden_star.webp    450w,
+                      ./src/img/mobil/x2/golden_star.webp 900w
+                    "
+                    media="(max-width:767px)" />
                   <img
-                    class="product__img"
-                    src="./src/img/golden_star.webp"
-                    alt="Постер New Orlean vs Golden Star"
-                  />
-                </div>
+                    class="teammate__img"
+                    src="./src/img/desktop/golden_star.webp"
+                    alt="Ігор Дем'яненко"
+                /></picture>
                 <h3 class="product__name">Постер New Orlean vs Golden Star</h3>
                 <p class="product__filters">Дизайн</p>
               </article>
@@ -130,18 +168,37 @@
 
             <li class="portfolio__item">
               <article class="product">
-                <div class="product__photo">
-                  <p class="product__about">
+                <picture class="product__photo"
+                  ><p class="product__about">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
                     отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
+                  <source
+                    class="teammate__img"
+                    sizes="270w"
+                    srcset="
+                      ./src/img/desktop/seafood.webp       370w,
+                      ./src/img/desktop/x2/seafood@2x.webp 740w
+                    "
+                    media="(min-width:1200px)"
+                    sizes="270w"
+                    srcset="
+                      ./src/img/tablet/seafood.webp    354w,
+                      ./src/img/tablet/x2/seafood.webp 708w
+                    "
+                    media="(max-width:1199px)"
+                    sizes="270w"
+                    srcset="
+                      ./src/img/mobil/seafood.webp    450w,
+                      ./src/img/mobil/x2/seafood.webp 900w
+                    "
+                    media="(max-width:767px)" />
                   <img
-                    class="product__img"
-                    src="./src/img/seafood.webp"
-                    alt="Ресторан Seafood"
-                  />
-                </div>
+                    class="teammate__img"
+                    src="./src/img/desktop/seafood.webp"
+                    alt="Ігор Дем'яненко"
+                /></picture>
                 <h3 class="product__name">Ресторан Seafood</h3>
                 <p class="product__filters">Додаток</p>
               </article>
@@ -149,18 +206,37 @@
 
             <li class="portfolio__item">
               <article class="product">
-                <div class="product__photo">
-                  <p class="product__about">
+                <picture class="product__photo"
+                  ><p class="product__about">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
                     отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
+                  <source
+                    class="teammate__img"
+                    sizes="270w"
+                    srcset="
+                      ./src/img/desktop/prime.webp       370w,
+                      ./src/img/desktop/x2/prime@2x.webp 740w
+                    "
+                    media="(min-width:1200px)"
+                    sizes="270w"
+                    srcset="
+                      ./src/img/tablet/prime.webp    354w,
+                      ./src/img/tablet/x2/prime.webp 708w
+                    "
+                    media="(max-width:1199px)"
+                    sizes="270w"
+                    srcset="
+                      ./src/img/mobil/prime.webp    450w,
+                      ./src/img/mobil/x2/prime.webp 900w
+                    "
+                    media="(max-width:767px)" />
                   <img
-                    class="product__img"
-                    src="./src/img/prime.webp"
-                    alt="Проєкт Prime"
-                  />
-                </div>
+                    class="teammate__img"
+                    src="./src/img/desktop/prime.webp"
+                    alt="Ігор Дем'яненко"
+                /></picture>
                 <h3 class="product__name">Проєкт Prime</h3>
                 <p class="product__filters">Маркетинг</p>
               </article>
@@ -168,18 +244,37 @@
 
             <li class="portfolio__item">
               <article class="product">
-                <div class="product__photo">
-                  <p class="product__about">
+                <picture class="product__photo"
+                  ><p class="product__about">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
                     отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
+                  <source
+                    class="teammate__img"
+                    sizes="270w"
+                    srcset="
+                      ./src/img/desktop/box.webp       370w,
+                      ./src/img/desktop/x2/box@2x.webp 740w
+                    "
+                    media="(min-width:1200px)"
+                    sizes="270w"
+                    srcset="
+                      ./src/img/tablet/box.webp    354w,
+                      ./src/img/tablet/x2/box.webp 708w
+                    "
+                    media="(max-width:1199px)"
+                    sizes="270w"
+                    srcset="
+                      ./src/img/mobil/box.webp    450w,
+                      ./src/img/mobil/x2/box.webp 900w
+                    "
+                    media="(max-width:767px)" />
                   <img
-                    class="product__img"
-                    src="./src/img/box.webp"
-                    alt="Проєкт Boxes"
-                  />
-                </div>
+                    class="teammate__img"
+                    src="./src/img/desktop/box.webp"
+                    alt="Ігор Дем'яненко"
+                /></picture>
                 <h3 class="product__name">Проєкт Boxes</h3>
                 <p class="product__filters">Додаток</p>
               </article>
@@ -187,18 +282,37 @@
 
             <li class="portfolio__item">
               <article class="product">
-                <div class="product__photo">
-                  <p class="product__about">
+                <picture class="product__photo"
+                  ><p class="product__about">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
                     отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
+                  <source
+                    class="teammate__img"
+                    sizes="270w"
+                    srcset="
+                      ./src/img/desktop/borders.webp       370w,
+                      ./src/img/desktop/x2/borders@2x.webp 740w
+                    "
+                    media="(min-width:1200px)"
+                    sizes="270w"
+                    srcset="
+                      ./src/img/tablet/borders.webp    354w,
+                      ./src/img/tablet/x2/borders.webp 708w
+                    "
+                    media="(max-width:1199px)"
+                    sizes="270w"
+                    srcset="
+                      ./src/img/mobil/borders.webp    450w,
+                      ./src/img/mobil/x2/borders.webp 900w
+                    "
+                    media="(max-width:767px)" />
                   <img
-                    class="product__img"
-                    src="./src/img/borders.webp"
-                    alt="Inspiration has no Borders"
-                  />
-                </div>
+                    class="teammate__img"
+                    src="./src/img/desktop/box.webp"
+                    alt="Ігор Дем'яненко"
+                /></picture>
                 <h3 class="product__name">Inspiration has no Borders</h3>
                 <p class="product__filters">Веб-сайт</p>
               </article>
@@ -206,18 +320,37 @@
 
             <li class="portfolio__item">
               <article class="product">
-                <div class="product__photo">
-                  <p class="product__about">
+                <picture class="product__photo"
+                  ><p class="product__about">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
                     отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
+                  <source
+                    class="teammate__img"
+                    sizes="270w"
+                    srcset="
+                      ./src/img/desktop/bock.webp       370w,
+                      ./src/img/desktop/x2/bock@2x.webp 740w
+                    "
+                    media="(min-width:1200px)"
+                    sizes="270w"
+                    srcset="
+                      ./src/img/tablet/bock.webp    354w,
+                      ./src/img/tablet/x2/bock.webp 708w
+                    "
+                    media="(max-width:1199px)"
+                    sizes="270w"
+                    srcset="
+                      ./src/img/mobil/bock.webp    450w,
+                      ./src/img/mobil/x2/bock.webp 900w
+                    "
+                    media="(max-width:767px)" />
                   <img
-                    class="product__img"
-                    src="./src/img/bock.webp"
-                    alt="Видання Limited Edition"
-                  />
-                </div>
+                    class="teammate__img"
+                    src="./src/img/desktop/bock.webp"
+                    alt="Ігор Дем'яненко"
+                /></picture>
                 <h3 class="product__name">Видання Limited Edition</h3>
                 <p class="product__filters">Дизайн</p>
               </article>
@@ -225,18 +358,37 @@
 
             <li class="portfolio__item">
               <article class="product">
-                <div class="product__photo">
-                  <p class="product__about">
+                <picture class="product__photo"
+                  ><p class="product__about">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
                     отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
+                  <source
+                    class="teammate__img"
+                    sizes="270w"
+                    srcset="
+                      ./src/img/desktop/lab.webp       370w,
+                      ./src/img/desktop/x2/lab@2x.webp 740w
+                    "
+                    media="(min-width:1200px)"
+                    sizes="270w"
+                    srcset="
+                      ./src/img/tablet/lab.webp    354w,
+                      ./src/img/tablet/x2/lab.webp 708w
+                    "
+                    media="(max-width:1199px)"
+                    sizes="270w"
+                    srcset="
+                      ./src/img/mobil/lab.webp    450w,
+                      ./src/img/mobil/x2/lab.webp 900w
+                    "
+                    media="(max-width:767px)" />
                   <img
-                    class="product__img"
-                    src="./src/img/lab.webp"
-                    alt="Проєкт LAB"
-                  />
-                </div>
+                    class="teammate__img"
+                    src="./src/img/desktop/lab.webp"
+                    alt="Ігор Дем'яненко"
+                /></picture>
                 <h3 class="product__name">Проєкт LAB</h3>
                 <p class="product__filters">Маркетинг</p>
               </article>
@@ -244,18 +396,37 @@
 
             <li class="portfolio__item">
               <article class="product">
-                <div class="product__photo">
-                  <p class="product__about">
+                <picture class="product__photo"
+                  ><p class="product__about">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
                     отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
+                  <source
+                    class="teammate__img"
+                    sizes="270w"
+                    srcset="
+                      ./src/img/desktop/growing.webp       370w,
+                      ./src/img/desktop/x2/growing@2x.webp 740w
+                    "
+                    media="(min-width:1200px)"
+                    sizes="270w"
+                    srcset="
+                      ./src/img/tablet/growing.webp    354w,
+                      ./src/img/tablet/x2/growing.webp 708w
+                    "
+                    media="(max-width:1199px)"
+                    sizes="270w"
+                    srcset="
+                      ./src/img/mobil/growing.webp    450w,
+                      ./src/img/mobil/x2/growing.webp 900w
+                    "
+                    media="(max-width:767px)" />
                   <img
-                    class="foto-product"
-                    src="./src/img/growing.webp"
-                    alt="Growing Business"
-                  />
-                </div>
+                    class="teammate__img"
+                    src="./src/img/desktop/growing.webp"
+                    alt="Ігор Дем'яненко"
+                /></picture>
                 <h3 class="product__name">Growing Business</h3>
                 <p class="product__filters">Додаток</p>
               </article>
@@ -293,28 +464,28 @@
             <li class="about__item">
               <a class="about__link" href="#"
                 ><svg class="about__photo">
-                  <use href="./src/img/symbol-defs.svg#icon-instagram" />
+                  <use href="./src/img/svg/symbol-defs.svg#icon-instagram" />
                 </svg>
               </a>
             </li>
             <li class="about__item">
               <a class="about__link" href="#"
                 ><svg class="about__photo">
-                  <use href="./src/img/symbol-defs.svg#icon-twitter" />
+                  <use href="./src/img/svg/symbol-defs.svg#icon-twitter" />
                 </svg>
               </a>
             </li>
             <li class="about__item">
               <a class="about__link" href="#"
                 ><svg class="about__photo">
-                  <use href="./src/img/symbol-defs.svg#icon-facebook" />
+                  <use href="./src/img/svg/symbol-defs.svg#icon-facebook" />
                 </svg>
               </a>
             </li>
             <li class="about__item">
               <a class="about__link" href="#"
                 ><svg class="about__photo">
-                  <use href="./src/img/symbol-defs.svg#icon-linkedin" />
+                  <use href="./src/img/svg/symbol-defs.svg#icon-linkedin" />
                 </svg>
               </a>
             </li>
@@ -335,7 +506,7 @@
             <button class="button">
               Підписатися
               <svg class="inputs__photo">
-                <use href="./src/img/symbol-defs.svg#icon-telegram" />
+                <use href="./src/img/svg/symbol-defs.svg#icon-telegram" />
               </svg>
             </button>
           </div>

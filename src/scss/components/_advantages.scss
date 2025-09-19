@@ -33,16 +33,16 @@
   background-size: auto;
 }
 .advantages__item--warning::before {
-  background-image: url(../img/antenna.svg);
+  background-image: url(../img/svg/antenna.svg);
 }
 .advantages__item--punctuality::before {
-  background-image: url(../img/clock.svg);
+  background-image: url(../img/svg/clock.svg);
 }
 .advantages__item--planning::before {
-  background-image: url(../img/diagram.svg);
+  background-image: url(../img/svg/diagram.svg);
 }
 .advantages__item--technology::before {
-  background-image: url(../img/astronaut.svg);
+  background-image: url(../img/svg/astronaut.svg);
 }
 .advantages__text {
   @include text(1.17);

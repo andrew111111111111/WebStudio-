@@ -19,7 +19,7 @@
       url(../img/mobil/x2/hero.webp);
   }
 }
-@media (min-device-pixel-ratio: 2) and (min-resolution: 2) and (min-width: 768px) {
+@media (min-width: 768px) {
   .hero {
     background-image: linear-gradient(
         to top,
@@ -30,7 +30,7 @@
     min-width: 768px;
   }
 }
-@media (min-device-pixel-ratio: 2) and (min-resolution: 2) and (min-width: 1200px) {
+@media (min-width: 1200px) {
   .hero {
     background-image: linear-gradient(
         to top,
@@ -39,6 +39,26 @@
       ),
       url(../img/tablet/x2/hero.webp);
     min-width: 1200px;
+  }
+}
+@media (min-device-pixel-ratio: 2) and (min-resolution: 2) and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(
+        to top,
+        $color-bg-gradient,
+        $color-bg-gradient
+      ),
+      url(../img/tablet/x2/hero.webp);
+  }
+}
+@media (min-device-pixel-ratio: 2) and (min-resolution: 2) and (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(
+        to top,
+        $color-bg-gradient,
+        $color-bg-gradient
+      ),
+      url(../img/tablet/x2/hero.webp);
   }
 }
 .hero__content {

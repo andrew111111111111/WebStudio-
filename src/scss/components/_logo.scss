@@ -5,6 +5,11 @@
   letter-spacing: 0.03em;
   flex-grow: 1;
 }
+@media (min-width: 768px) {
+  .logo {
+    flex-grow: 0;
+  }
+}
 .header__logo {
   font-family: $font-secendary;
   @include text(26px, 700, 1.38);

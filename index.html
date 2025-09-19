@@ -64,7 +64,7 @@
               <li class="address__item">
                 <a href="mailto:info@devstudio.com" class="addres__link">
                   <svg class="addres__photo">
-                    <use href="./src/img/symbol-defs.svg#icon-envelope" />
+                    <use href="./src/img/svg/symbol-defs.svg#icon-envelope" />
                   </svg>
                   info@devstudio.com
                 </a>
@@ -72,7 +72,7 @@
               <li class="address__item">
                 <a class="addres__link" href="tel:+380961111111"
                   ><svg class="addres__photo">
-                    <use href="./src/img/symbol-defs.svg#icon-smartphone" />
+                    <use href="./src/img/svg/symbol-defs.svg#icon-smartphone" />
                   </svg>
                   +38 096 111 11 11</a
                 >
@@ -93,7 +93,7 @@
           <div class="modal">
             <button data-modal-close class="button__clouse">
               <svg class="photo__close">
-                <use href="./src/img/symbol-defs.svg#icon-cross" />
+                <use href="./src/img/svg/symbol-defs.svg#icon-cross" />
               </svg>
             </button>
             <h2 class="modal__title">Залиште свої дані, ми вам передзвонимо</h2>
@@ -104,7 +104,7 @@
                   <label for="grup__input0" class="grup__text">Ім'я</label>
                   <div class="grup__input">
                     <svg class="input__photo">
-                      <use href="./src/img/symbol-defs.svg#icon-person" />
+                      <use href="./src/img/svg/symbol-defs.svg#icon-person" />
                     </svg>
                     <label for="grup__input0"></label>
                     <input class="input" type="text" id="grup__input0" />
@@ -115,7 +115,7 @@
                   <label for="grup__input1" class="grup__text">Телефон</label>
                   <div class="grup__input">
                     <svg class="input__photo">
-                      <use href="./src/img/symbol-defs.svg#icon-phone" />
+                      <use href="./src/img/svg/symbol-defs.svg#icon-phone" />
                     </svg>
                     <label for="grup__input1"></label>
                     <input class="input" type="tel" id="grup__input1" />
@@ -126,7 +126,7 @@
                   <label for="grup__input2" class="grup__text">Пошта</label>
                   <div class="grup__input">
                     <svg class="input__photo">
-                      <use href="./src/img/symbol-defs.svg#icon-email" />
+                      <use href="./src/img/svg/symbol-defs.svg#icon-email" />
                     </svg>
                     <label for="grup__input2"></label>
                     <input class="input" type="email" id="grup__input2" />
@@ -211,6 +211,11 @@
                   class="work__photo"
                   src="./src/img/laptop.webp"
                   alt="ноутбук"
+                  sizes="370w"
+                  srcset="
+                    ./src/img/desktop/laptop.webp       370w,
+                    ./src/img/desktop/x2/laptop@2x.webp 740w
+                  "
                 />
                 <h3 class="work__subtitle">Десктопні додатки</h3>
               </div>
@@ -221,6 +226,11 @@
                   class="work__photo"
                   src="./src/img/mobil.webp"
                   alt="телефон"
+                  sizes="370w"
+                  srcset="
+                    ./src/img/desktop/mobil.webp       370w,
+                    ./src/img/desktop/x2/mobil@2x.webp 740w
+                  "
                 />
                 <h3 class="work__subtitle">Мобільні додатки</h3>
               </div>
@@ -231,6 +241,11 @@
                   class="work__photo"
                   src="./src/img/tablet.webp"
                   alt="планшет"
+                  sizes="370w"
+                  srcset="
+                    ./src/img/desktop/tablet.webp       370w,
+                    ./src/img/desktop/x2/tablet@2x.webp 740w
+                  "
                 />
                 <h3 class="work__subtitle">Дизайнерські рішення</h3>
               </div>
@@ -245,13 +260,33 @@
           <ul class="team__list">
             <li class="team__item">
               <article class="teammate">
-                <div class="teammate__photo">
+                <picture class="teammate__photo"
+                  ><source
+                    class="teammate__img"
+                    sizes="270w"
+                    srcset="
+                      ./src/img/desktop/igor.webp       270w,
+                      ./src/img/desktop/x2/igor@2x.webp 540w
+                    "
+                    media="(min-width:1200px)"
+                    sizes="270w"
+                    srcset="
+                      ./src/img/tablet/igor.webp    354w,
+                      ./src/img/tablet/x2/igor.webp 708w
+                    "
+                    media="(max-width:1199px)"
+                    sizes="270w"
+                    srcset="
+                      ./src/img/mobil/igor.webp    450w,
+                      ./src/img/mobil/x2/igor.webp 900w
+                    "
+                    media="(max-width:767px)" />
                   <img
                     class="teammate__img"
-                    src="./src/img/igor.webp"
+                    src="./src/img/desktop/igor.webp"
                     alt="Ігор Дем'яненко"
-                  />
-                </div>
+                /></picture>
+
                 <h3 class="teammate__name">Ігор Дем'яненко</h3>
                 <p class="teammete__role">Product Designer</p>
                 <ul class="teammate__list">
@@ -259,7 +294,9 @@
                   <li class="teammate__item">
                     <a class="teammate__link" href=""
                       ><svg class="teammate__picture">
-                        <use href="./src/img/symbol-defs.svg#icon-instagram" />
+                        <use
+                          href="./src/img/svg/symbol-defs.svg#icon-instagram"
+                        />
                       </svg>
                     </a>
                   </li>
@@ -267,7 +304,9 @@
                   <li class="teammate__item">
                     <a class="teammate__link" href=""
                       ><svg class="teammate__picture">
-                        <use href="./src/img/symbol-defs.svg#icon-twitter" />
+                        <use
+                          href="./src/img/svg/symbol-defs.svg#icon-twitter"
+                        />
                       </svg>
                     </a>
                   </li>
@@ -275,7 +314,9 @@
                   <li class="teammate__item">
                     <a class="teammate__link" href=""
                       ><svg class="teammate__picture">
-                        <use href="./src/img/symbol-defs.svg#icon-facebook" />
+                        <use
+                          href="./src/img/svg/symbol-defs.svg#icon-facebook"
+                        />
                       </svg>
                     </a>
                   </li>
@@ -283,7 +324,9 @@
                   <li class="teammate__item">
                     <a class="teammate__link" href=""
                       ><svg class="teammate__picture">
-                        <use href="./src/img/symbol-defs.svg#icon-linkedin" />
+                        <use
+                          href="./src/img/svg/symbol-defs.svg#icon-linkedin"
+                        />
                       </svg>
                     </a>
                   </li>
@@ -292,13 +335,32 @@
             </li>
             <li class="team__item">
               <article class="teammate">
-                <div class="teammate__photo">
+                <picture class="teammate__photo"
+                  ><source
+                    class="teammate__img"
+                    sizes="270w"
+                    srcset="
+                      ./src/img/desktop/olga.webp       270w,
+                      ./src/img/desktop/x2/olga@2x.webp 540w
+                    "
+                    media="(min-width:1200px)"
+                    sizes="270w"
+                    srcset="
+                      ./src/img/tablet/olga.webp    354w,
+                      ./src/img/tablet/x2/olga.webp 708w
+                    "
+                    media="(max-width:1199px)"
+                    sizes="270w"
+                    srcset="
+                      ./src/img/mobil/olga.webp    450w,
+                      ./src/img/mobil/x2/olga.webp 900w
+                    "
+                    media="(max-width:767px)" />
                   <img
                     class="teammate__img"
-                    src="./src/img/olga.webp"
+                    src="./src/img/desktop/olga.webp"
                     alt="Ольга Рєпіна"
-                  />
-                </div>
+                /></picture>
                 <h3 class="teammate__name">Ольга Рєпіна</h3>
                 <p class="teammete__role">Frontend Developer</p>
                 <ul class="teammate__list">
@@ -306,7 +368,9 @@
                   <li class="teammate__item">
                     <a class="teammate__link" href=""
                       ><svg class="teammate__picture">
-                        <use href="./src/img/symbol-defs.svg#icon-instagram" />
+                        <use
+                          href="./src/img/svg/symbol-defs.svg#icon-instagram"
+                        />
                       </svg>
                     </a>
                   </li>
@@ -314,7 +378,9 @@
                   <li class="teammate__item">
                     <a class="teammate__link" href=""
                       ><svg class="teammate__picture">
-                        <use href="./src/img/symbol-defs.svg#icon-twitter" />
+                        <use
+                          href="./src/img/svg/symbol-defs.svg#icon-twitter"
+                        />
                       </svg>
                     </a>
                   </li>
@@ -322,7 +388,9 @@
                   <li class="teammate__item">
                     <a class="teammate__link" href=""
                       ><svg class="teammate__picture">
-                        <use href="./src/img/symbol-defs.svg#icon-facebook" />
+                        <use
+                          href="./src/img/svg/symbol-defs.svg#icon-facebook"
+                        />
                       </svg>
                     </a>
                   </li>
@@ -330,7 +398,9 @@
                   <li class="teammate__item">
                     <a class="teammate__link" href=""
                       ><svg class="teammate__picture">
-                        <use href="./src/img/symbol-defs.svg#icon-linkedin" />
+                        <use
+                          href="./src/img/svg/symbol-defs.svg#icon-linkedin"
+                        />
                       </svg>
                     </a>
                   </li>
@@ -339,13 +409,32 @@
             </li>
             <li class="team__item">
               <article class="teammate">
-                <div class="teammate__photo">
+                <picture class="teammate__photo"
+                  ><source
+                    class="teammate__img"
+                    sizes="270w"
+                    srcset="
+                      ./src/img/desktop/nikolay.webp       270w,
+                      ./src/img/desktop/x2/nikolay@2x.webp 540w
+                    "
+                    media="(min-width:1200px)"
+                    sizes="270w"
+                    srcset="
+                      ./src/img/tablet/nikolay.webp    354w,
+                      ./src/img/tablet/x2/nikolay.webp 708w
+                    "
+                    media="(max-width:1199px)"
+                    sizes="270w"
+                    srcset="
+                      ./src/img/mobil/nikolay.webp    450w,
+                      ./src/img/mobil/x2/nikolay.webp 900w
+                    "
+                    media="(max-width:767px)" />
                   <img
                     class="teammate__img"
-                    src="./src/img/nikolay.webp"
+                    src="./src/img/desktop/nikolay.webp"
                     alt="Микола Тарасов"
-                  />
-                </div>
+                /></picture>
                 <h3 class="teammate__name">Микола Тарасов</h3>
                 <p class="teammete__role">Marketing</p>
                 <ul class="teammate__list">
@@ -353,7 +442,9 @@
                   <li class="teammate__item">
                     <a class="teammate__link" href=""
                       ><svg class="teammate__picture">
-                        <use href="./src/img/symbol-defs.svg#icon-instagram" />
+                        <use
+                          href="./src/img/svg/symbol-defs.svg#icon-instagram"
+                        />
                       </svg>
                     </a>
                   </li>
@@ -361,7 +452,9 @@
                   <li class="teammate__item">
                     <a class="teammate__link" href=""
                       ><svg class="teammate__picture">
-                        <use href="./src/img/symbol-defs.svg#icon-twitter" />
+                        <use
+                          href="./src/img/svg/symbol-defs.svg#icon-twitter"
+                        />
                       </svg>
                     </a>
                   </li>
@@ -369,7 +462,9 @@
                   <li class="teammate__item">
                     <a class="teammate__link" href=""
                       ><svg class="teammate__picture">
-                        <use href="./src/img/symbol-defs.svg#icon-facebook" />
+                        <use
+                          href="./src/img/svg/symbol-defs.svg#icon-facebook"
+                        />
                       </svg>
                     </a>
                   </li>
@@ -377,7 +472,9 @@
                   <li class="teammate__item">
                     <a class="teammate__link" href=""
                       ><svg class="teammate__picture">
-                        <use href="./src/img/symbol-defs.svg#icon-linkedin" />
+                        <use
+                          href="./src/img/svg/symbol-defs.svg#icon-linkedin"
+                        />
                       </svg>
                     </a>
                   </li>
@@ -386,13 +483,32 @@
             </li>
             <li class="team__item">
               <article class="teammate">
-                <div class="teammate__photo">
+                <picture class="teammate__photo"
+                  ><source
+                    class="teammate__img"
+                    sizes="270w"
+                    srcset="
+                      ./src/img/desktop/misha.webp       270w,
+                      ./src/img/desktop/x2/misha@2x.webp 540w
+                    "
+                    media="(min-width:1200px)"
+                    sizes="270w"
+                    srcset="
+                      ./src/img/tablet/misha.webp    354w,
+                      ./src/img/tablet/x2/misha.webp 708w
+                    "
+                    media="(max-width:1199px)"
+                    sizes="270w"
+                    srcset="
+                      ./src/img/mobil/misha.webp    450w,
+                      ./src/img/mobil/x2/misha.webp 900w
+                    "
+                    media="(max-width:767px)" />
                   <img
                     class="teammate__img"
-                    src="./src/img/misha.webp"
+                    src="./src/img/desktop/misha.webp"
                     alt="Михайло Єрмаков"
-                  />
-                </div>
+                /></picture>
                 <h3 class="teammate__name">Михайло Єрмаков</h3>
                 <p class="teammete__role">UI Designer</p>
                 <ul class="teammate__list">
@@ -400,7 +516,9 @@
                   <li class="teammate__item">
                     <a class="teammate__link" href=""
                       ><svg class="teammate__picture">
-                        <use href="./src/img/symbol-defs.svg#icon-instagram" />
+                        <use
+                          href="./src/img/svg/symbol-defs.svg#icon-instagram"
+                        />
                       </svg>
                     </a>
                   </li>
@@ -408,7 +526,9 @@
                   <li class="teammate__item">
                     <a class="teammate__link" href=""
                       ><svg class="teammate__picture">
-                        <use href="./src/img/symbol-defs.svg#icon-twitter" />
+                        <use
+                          href="./src/img/svg/symbol-defs.svg#icon-twitter"
+                        />
                       </svg>
                     </a>
                   </li>
@@ -416,7 +536,9 @@
                   <li class="teammate__item">
                     <a class="teammate__link" href=""
                       ><svg class="teammate__picture">
-                        <use href="./src/img/symbol-defs.svg#icon-facebook" />
+                        <use
+                          href="./src/img/svg/symbol-defs.svg#icon-facebook"
+                        />
                       </svg>
                     </a>
                   </li>
@@ -424,7 +546,9 @@
                   <li class="teammate__item">
                     <a class="teammate__link" href=""
                       ><svg class="teammate__picture">
-                        <use href="./src/img/symbol-defs.svg#icon-linkedin" />
+                        <use
+                          href="./src/img/svg/symbol-defs.svg#icon-linkedin"
+                        />
                       </svg>
                     </a>
                   </li>
@@ -441,42 +565,44 @@
             <li class="clients__item">
               <a class="clients__link" href="#">
                 <svg class="clients__photo">
-                  <use href="./src/img/symbol-defs.svg#icon-ya-co" />
+                  <use href="./src/img/svg/symbol-defs.svg#icon-ya-co" />
                 </svg>
               </a>
             </li>
             <li class="clients__item">
               <a class="clients__link" href="#">
                 <svg class="clients__photo">
-                  <use href="./src/img/symbol-defs.svg#icon-tagline" />
+                  <use href="./src/img/svg/symbol-defs.svg#icon-tagline" />
                 </svg>
               </a>
             </li>
             <li class="clients__item">
               <a class="clients__link" href="#">
                 <svg class="clients__photo">
-                  <use href="./src/img/symbol-defs.svg#icon-company" />
+                  <use href="./src/img/svg/symbol-defs.svg#icon-company" />
                 </svg>
               </a>
             </li>
             <li class="clients__item">
               <a class="clients__link" href="#">
                 <svg class="clients__photo">
-                  <use href="./src/img/symbol-defs.svg#icon-foster" />
+                  <use href="./src/img/svg/symbol-defs.svg#icon-foster" />
                 </svg>
               </a>
             </li>
             <li class="clients__item">
               <a class="clients__link" href="#">
                 <svg class="clients__photo">
-                  <use href="./src/img/symbol-defs.svg#icon-plact_compani" />
+                  <use
+                    href="./src/img/svg/symbol-defs.svg#icon-plact_compani"
+                  />
                 </svg>
               </a>
             </li>
             <li class="clients__item">
               <a class="clients__link" href="#">
                 <svg class="clients__photo">
-                  <use href="./src/img/symbol-defs.svg#icon-tag_line" />
+                  <use href="./src/img/svg/symbol-defs.svg#icon-tag_line" />
                 </svg>
               </a>
             </li>
@@ -514,28 +640,28 @@
             <li class="about__item">
               <a class="about__link" href="#"
                 ><svg class="about__photo">
-                  <use href="./src/img/symbol-defs.svg#icon-instagram" />
+                  <use href="./src/img/svg/symbol-defs.svg#icon-instagram" />
                 </svg>
               </a>
             </li>
             <li class="about__item">
               <a class="about__link" href="#"
                 ><svg class="about__photo">
-                  <use href="./src/img/symbol-defs.svg#icon-twitter" />
+                  <use href="./src/img/svg/symbol-defs.svg#icon-twitter" />
                 </svg>
               </a>
             </li>
             <li class="about__item">
               <a class="about__link" href="#"
                 ><svg class="about__photo">
-                  <use href="./src/img/symbol-defs.svg#icon-facebook" />
+                  <use href="./src/img/svg/symbol-defs.svg#icon-facebook" />
                 </svg>
               </a>
             </li>
             <li class="about__item">
               <a class="about__link" href="#"
                 ><svg class="about__photo">
-                  <use href="./src/img/symbol-defs.svg#icon-linkedin" />
+                  <use href="./src/img/svg/symbol-defs.svg#icon-linkedin" />
                 </svg>
               </a>
             </li>
@@ -556,7 +682,7 @@
             <button class="button">
               Підписатися
               <svg class="input__photo">
-                <use href="./src/img/symbol-defs.svg#icon-telegram" />
+                <use href="./src/img/svg/symbol-defs.svg#icon-telegram" />
               </svg>
             </button>
           </div>
