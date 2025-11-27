@@ -1,0 +1,19 @@
+@mixin flex($gap) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: $gap;
+}
+@mixin text($size: 14px, $weigth: 400, $LineHeight: 1.14) {
+  font-size: $size;
+  font-weight: $weigth;
+  line-height: $LineHeight;
+}
+@mixin titles($line-height, $spacing, $padding: 0, $size) {
+  color: $color-text-title;
+  font-weight: 700;
+  line-height: $line-height;
+  letter-spacing: $spacing;
+  padding: $padding;
+  font-size: $size;
+}

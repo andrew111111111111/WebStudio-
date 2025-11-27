@@ -1,0 +1,22 @@
+body {
+  font-family: $font-primary;
+  @include text(14px, 400, 1.14);
+  color: $color-text-primary;
+}
+
+.no-scrole {
+  display: block;
+  overflow: hidden;
+}
+.container {
+  min-width: 320px;
+  max-width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+}

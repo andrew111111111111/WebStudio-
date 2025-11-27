@@ -1,0 +1,129 @@
+@media (max-width: 767px) {
+  .mobile-menu__wrapp {
+    background-color: $color-text-secendary;
+    position: fixed;
+    inset: 0;
+    padding: 20px;
+    transform: translateX(-100%);
+    transition: transform 1s linear;
+  }
+  .mobile-menu__check:checked ~ .mobile-menu__wrapp {
+    transform: translateX(0);
+  }
+  .nav__link {
+    @include text(40px, 300, 1.17);
+  }
+  .nav__link.studio__link {
+    color: $color-text-hover;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &::after {
+      width: 100%;
+      height: 4px;
+      background-color: $color-text-hover;
+      border-radius: 2px;
+      content: "";
+      position: absolute;
+      bottom: -35px;
+      left: 0;
+    }
+  }
+  .nav__link.portfolio__link {
+    color: $color-text-hover;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &::after {
+      width: 100%;
+      height: 4px;
+      background-color: $color-text-hover;
+      border-radius: 2px;
+      content: "";
+      position: absolute;
+      bottom: -35px;
+      left: 0;
+    }
+  }
+  .nav__link {
+    overflow: hidden;
+    @include text(14px, 500);
+    color: $color-text-title;
+    letter-spacing: 0.02em;
+    position: relative;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: inline;
+    s &:hover {
+      color: $color-text-hover;
+    }
+    &.nav__link--after {
+      animation-name: link_hover;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
+    }
+  }
+
+  .nav__link--after {
+    height: 4px;
+    width: 4px;
+    background-color: $color-text-secendary;
+    position: absolute;
+    bottom: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+    &:hover {
+      width: 100%;
+      height: 4px;
+      background-color: $color-text-hover;
+      border-radius: 2px;
+      content: "";
+      position: absolute;
+      bottom: -35px;
+      left: 0;
+    }
+  }
+  @keyframes link_hover {
+    0% {
+      transform: translateX(-1000%);
+    }
+    45% {
+      transform: rotate(-180deg) translateX(60%);
+    }
+    55% {
+      transform: rotate(180deg) translateX(-60%);
+    }
+    100% {
+      transform: translateX(1000%);
+    }
+  }
+  .header__list {
+    display: flex;
+    gap: 50px;
+  }
+  .addres__link {
+    color: $color-text-primary;
+    @include flex(10px);
+    transition: fill, color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: inherit;
+
+    &:hover {
+      color: $color-text-hover;
+
+      &.addres__photo {
+        fill: $color-text-hover;
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      }
+    }
+  }
+  .addres__photo {
+    width: 16px;
+    height: 12px;
+    fill: $color-text-primary;
+  }
+}
+
+@media (min-width: 768px) {
+  .mobile-menu__label {
+    display: none;
+  }
+  .mobile-menu__check {
+    display: none;
+  }
+}

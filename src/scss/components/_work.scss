@@ -1,0 +1,40 @@
+.work,
+.work__title,
+.work__list,
+.work__grup,
+.work__subtitle {
+  display: none;
+}
+@media (min-width: 1200px) {
+  .work {
+    opacity: 1;
+    pointer-events: all;
+    padding-top: 50px;
+    margin-bottom: 95px;
+  }
+  .work__title {
+    @include text(24px);
+    text-align: center;
+    @include titles(1.16, 0.03em, 95px 0 50px, 36px);
+  }
+  .work__list {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  .work__grup {
+    position: relative;
+  }
+  .work__subtitle {
+    @include text(14px, 700);
+    letter-spacing: 3%;
+    color: $color-text-secendary;
+    text-align: center;
+    width: 100%;
+    padding: 27px 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: $color-bg-work;
+  }
+}

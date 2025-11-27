@@ -1,0 +1,115 @@
+.backdrop {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.45);
+  inset: 9999;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.backdrop.is__hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+.backdrop.is__hidden .modal {
+  transform: translate(-50%, 100%);
+}
+.modal {
+  background-color: whitesmoke;
+  position: absolute;
+  width: 530px;
+  height: 600px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  @include flex(0);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button__clouse {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  border: solid 1px $color-border-modal;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  @include flex(0);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    fill: $color-text-hover;
+  }
+}
+.photo__close {
+  width: 11px;
+  height: 11px;
+}
+.modal__title {
+  @include text(20px, 700, 1.15);
+  @include titles(1.15, 0.03em, 40px 0 12px, 20px);
+}
+.modal__grup {
+  @include flex(10px);
+}
+.grup__text {
+  @include text(20px, 700, 1.16);
+  letter-spacing: 0.01;
+}
+.grup__list {
+  @include flex(10px);
+}
+.grup__item {
+  @include flex(4px);
+}
+.grup__item--agree {
+  @include flex(7px);
+  flex-direction: row;
+  padding: 20px 55px 30px;
+}
+.grup__input {
+  border: $color-bg-modal solid 1px;
+  border-radius: 4px;
+  width: 450px;
+  height: 40px;
+  padding: 12px 0;
+  display: flex;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    border: $color-text-hover solid 1px;
+    &.input__photo {
+      fill: $color-text-hover;
+    }
+  }
+}
+.koment__grup {
+  padding-bottom: 100px;
+}
+.koment__input {
+  height: 20px;
+}
+.input__photo {
+  width: 18px;
+  height: 18px;
+  margin: 0 12px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.input {
+  width: 100%;
+  padding-right: 10px;
+  display: flex;
+  align-items: center;
+}
+.grup__text--agree {
+  text-align: center;
+}
+.grup__link {
+  color: $color-text-hover;
+  text-decoration-line: underline;
+}
+.modal__acceptance {
+  @include text(16px, 400, 1.71);
+  letter-spacing: 0.06em;
+  text-align: center;
+  color: $color-text-secendary;
+  background-color: $color-text-hover;
+  padding: 10px 52px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
